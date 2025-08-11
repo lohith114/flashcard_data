@@ -2155,6 +2155,711 @@
                     "back": "`self` refers to the newly created instance of the class. The `__init__` method uses it to set up the instance's initial state by assigning values to its attributes."
                 }
             ]
+        },
+
+         {
+            "name": "Java",
+            "flashcards": [
+                {
+                    "front": "What is Java?",
+                    "back": "Java is a high-level, class-based, object-oriented programming language that is designed to be platform-independent ('write once, run anywhere')."
+                },
+                {
+                    "front": "What is the difference between JDK, JRE, and JVM?",
+                    "back": "JVM (Java Virtual Machine) is an abstract machine that executes Java bytecode. JRE (Java Runtime Environment) provides the libraries and JVM needed to run Java applications. JDK (Java Development Kit) includes the JRE plus development tools like the compiler (`javac`)."
+                },
+                {
+                    "front": "What does 'platform-independent' mean in the context of Java?",
+                    "back": "It means that Java code can be written once and run on any platform that has a compatible Java Virtual Machine (JVM), without needing to be recompiled for each platform."
+                },
+                {
+                    "front": "What is the entry point of a Java program?",
+                    "back": "The `public static void main(String[] args)` method."
+                },
+                {
+                    "front": "What are the 8 primitive data types in Java?",
+                    "back": "`byte`, `short`, `int`, `long` (integer types); `float`, `double` (floating-point types); `char` (character type); and `boolean` (true/false)."
+                },
+                {
+                    "front": "What is the difference between primitive types and reference types?",
+                    "back": "Primitive types store the actual value directly in memory (e.g., `int x = 10;`). Reference types store a memory address (a reference) that points to where the actual object is stored (e.g., `String s = new String(\"hello\");`)."
+                },
+                {
+                    "front": "What is autoboxing and unboxing?",
+                    "back": "Autoboxing is the automatic conversion of a primitive type to its corresponding wrapper class object (e.g., `int` to `Integer`). Unboxing is the reverse: converting a wrapper class object to its primitive type."
+                },
+                {
+                    "front": "Why are strings immutable in Java?",
+                    "back": "Strings are immutable for security, performance, and thread safety. Because they can't be changed, they can be safely shared between multiple threads and used as keys in HashMaps, and the JVM can optimize them by using a string pool."
+                },
+                {
+                    "front": "What is the difference between `String`, `StringBuilder`, and `StringBuffer`?",
+                    "back": "`String` is immutable. `StringBuilder` is a mutable sequence of characters and is not thread-safe (faster). `StringBuffer` is also mutable but is thread-safe (synchronized), which makes it slower."
+                },
+                {
+                    "front": "What is the String Pool (or String Constant Pool)?",
+                    "back": "A special storage area in the Java heap where string literals are stored. When a new string literal is created, the JVM checks the pool first to see if an identical string already exists."
+                },
+                {
+                    "front": "What is an array in Java?",
+                    "back": "An array is a container object that holds a fixed number of values of a single type. The length of an array is established when the array is created."
+                },
+                {
+                    "front": "What is the `main` method's signature and why is it `public static void`?",
+                    "back": "`public`: So it can be accessed by the JVM to start the program. `static`: So the JVM can call it without creating an instance of the class. `void`: Because it doesn't return any value to the JVM."
+                },
+                {
+                    "front": "What are the three types of comments in Java?",
+                    "back": "1. Single-line (`// ...`), 2. Multi-line (`/* ... */`), and 3. Javadoc (`/** ... */`)."
+                },
+                {
+                    "front": "What are the main principles of Object-Oriented Programming (OOP)?",
+                    "back": "The four main principles are Encapsulation, Inheritance, Polymorphism, and Abstraction."
+                },
+                {
+                    "front": "What is Encapsulation?",
+                    "back": "The bundling of data (attributes) and methods that operate on the data into a single unit (a class). It often involves restricting access to the data using private access modifiers and providing public getter/setter methods."
+                },
+                {
+                    "front": "What is Inheritance?",
+                    "back": "A mechanism where a new class (subclass) inherits attributes and methods from an existing class (superclass), allowing for code reuse and establishing an 'is-a' relationship."
+                },
+                {
+                    "front": "What is Polymorphism?",
+                    "back": "The ability of an object to take on many forms. In Java, it is often achieved through method overloading (compile-time polymorphism) and method overriding (runtime polymorphism)."
+                },
+                {
+                    "front": "What is Abstraction?",
+                    "back": "The concept of hiding complex implementation details and showing only the essential features of the object. It is achieved using abstract classes and interfaces."
+                },
+                {
+                    "front": "What is a class and what is an object?",
+                    "back": "A class is a blueprint or template for creating objects. An object is an instance of a class, with its own state (attributes) and behavior (methods)."
+                },
+                {
+                    "front": "What is a constructor?",
+                    "back": "A special method used to initialize a newly created object. It has the same name as the class and does not have a return type."
+                },
+                {
+                    "front": "What is constructor overloading?",
+                    "back": "Defining multiple constructors in the same class with different parameter lists. This allows an object to be created in different ways."
+                },
+                {
+                    "front": "What is a default constructor?",
+                    "back": "A no-argument constructor that the Java compiler automatically provides if no other constructor is explicitly defined in the class."
+                },
+                {
+                    "front": "What is the `this` keyword?",
+                    "back": "`this` is a reference variable that refers to the current object. It's used to disambiguate instance variables from local variables, and to call another constructor from within a constructor (`this(...)`)."
+                },
+                {
+                    "front": "What is the `super` keyword?",
+                    "back": "`super` is a reference variable used to refer to the immediate parent class object. It's used to call parent class methods and constructors (`super(...)`)."
+                },
+                {
+                    "front": "What is method overloading?",
+                    "back": "Defining multiple methods in the same class with the same name but with different parameter lists (different number or type of parameters). This is compile-time polymorphism."
+                },
+                {
+                    "front": "What is method overriding?",
+                    "back": "When a subclass provides a specific implementation for a method that is already defined in its superclass. The method signature must be the same. This is runtime polymorphism."
+                },
+                {
+                    "front": "Can you override a `private` method?",
+                    "back": "No. Private methods are not visible to subclasses and are not part of the inheritance mechanism, so they cannot be overridden."
+                },
+                {
+                    "front": "Can you override a `static` method?",
+                    "back": "No. Static methods belong to the class, not the instance. A static method in a subclass with the same signature as one in the superclass *hides* the superclass method, but it is not overriding."
+                },
+                {
+                    "front": "What are access modifiers in Java?",
+                    "back": "Keywords that set the visibility of classes, methods, and variables. They are `public`, `protected`, `default` (package-private), and `private`."
+                },
+                {
+                    "front": "Explain the `public` access modifier.",
+                    "back": "The member is accessible from any other code, both inside and outside the package."
+                },
+                {
+                    "front": "Explain the `private` access modifier.",
+                    "back": "The member is only accessible within the same class."
+                },
+                {
+                    "front": "Explain the `protected` access modifier.",
+                    "back": "The member is accessible within its own package and by subclasses in other packages."
+                },
+                {
+                    "front": "Explain the `default` (package-private) access modifier.",
+                    "back": "This is the access level when no modifier is specified. The member is accessible only by classes in the same package."
+                },
+                {
+                    "front": "What is the `static` keyword?",
+                    "back": "`static` is used to create class-level variables and methods. Static members belong to the class itself, not to any specific instance, and can be accessed without creating an object."
+                },
+                {
+                    "front": "What is a static block?",
+                    "back": "A block of code prefixed with the `static` keyword. It is executed only once, when the class is first loaded into memory by the JVM."
+                },
+                {
+                    "front": "What is the `final` keyword?",
+                    "back": "`final` can be applied to variables (to create constants), methods (to prevent overriding), and classes (to prevent inheritance)."
+                },
+                {
+                    "front": "What is a `final` variable?",
+                    "back": "A variable whose value cannot be changed once it has been initialized. It's effectively a constant."
+                },
+                {
+                    "front": "What is an abstract class?",
+                    "back": "A class that cannot be instantiated and may contain one or more abstract methods (methods without a body). It is designed to be subclassed."
+                },
+                {
+                    "front": "What is an abstract method?",
+                    "back": "A method declared with the `abstract` keyword and without an implementation (no body). It must be implemented by any non-abstract subclass."
+                },
+                {
+                    "front": "What is an interface?",
+                    "back": "A completely abstract type that defines a contract of behaviors (methods) that a class must implement. It can only contain abstract methods (before Java 8), constants, default methods, static methods, and nested types."
+                },
+                {
+                    "front": "What is the difference between an abstract class and an interface?",
+                    "back": "A class can implement multiple interfaces but can only extend one abstract class. Abstract classes can have constructors and instance variables, while interfaces cannot (they can only have `public static final` constants)."
+                },
+                {
+                    "front": "What are `default` methods in an interface (Java 8+)?",
+                    "back": "Methods in an interface that have a default implementation. A class can use this default implementation or override it. They allow adding new methods to existing interfaces without breaking implementing classes."
+                },
+                {
+                    "front": "What are `static` methods in an interface (Java 8+)?",
+                    "back": "Methods that belong to the interface itself, not to instances of implementing classes. They can be called directly on the interface (e.g., `MyInterface.staticMethod()`)."
+                },
+                {
+                    "front": "What is the `Object` class?",
+                    "back": "The root of the class hierarchy in Java. Every class is a direct or indirect subclass of `Object`."
+                },
+                {
+                    "front": "What is the purpose of the `equals()` method?",
+                    "back": "It is used to compare two objects for equality of content (value equality), as opposed to `==` which checks for reference equality."
+                },
+                {
+                    "front": "What is the purpose of the `hashCode()` method?",
+                    "back": "It returns an integer hash code value for the object. It is used by hash-based collections like `HashMap` and `HashSet` to store and retrieve objects efficiently."
+                },
+                {
+                    "front": "What is the contract between `equals()` and `hashCode()`?",
+                    "back": "1. If two objects are equal according to `equals()`, they MUST have the same hash code. 2. If two objects have the same hash code, they are NOT required to be equal (this is a hash collision)."
+                },
+                {
+                    "front": "What happens if you override `equals()` but not `hashCode()`?",
+                    "back": "Hash-based collections like `HashMap` and `HashSet` will not work correctly. You might not be able to retrieve an object that you've put into the collection because the hash code may not lead to the correct bucket."
+                },
+                {
+                    "front": "What is a marker interface?",
+                    "back": "An interface with no methods or fields. It is used to 'mark' a class as having a certain capability. Examples include `Serializable` and `Cloneable`."
+                },
+                {
+                    "front": "What is the `instanceof` operator?",
+                    "back": "An operator used to test whether an object is an instance of a specific class, a subclass of that class, or an instance of a class that implements a specific interface."
+                },
+                {
+                    "front": "What is aggregation?",
+                    "back": "A 'has-a' relationship between two classes where one class contains a reference to another. It represents a whole-part relationship, but the part can exist independently of the whole."
+                },
+                {
+                    "front": "What is composition?",
+                    "back": "A stricter form of aggregation ('has-a' relationship) where the part cannot exist independently of the whole. The contained object is created and destroyed with its container."
+                },
+                {
+                    "front": "What is an enum in Java?",
+                    "back": "An `enum` is a special data type that enables a variable to be a set of predefined constants. It provides type-safety and is often used for things like days of the week or states."
+                },
+                {
+                    "front": "What is an exception in Java?",
+                    "back": "An event that occurs during the execution of a program that disrupts the normal flow of instructions. It's represented by an object that is an instance of a class descending from `Throwable`."
+                },
+                {
+                    "front": "What is the difference between an error and an exception?",
+                    "back": "An `Error` represents a serious problem that a reasonable application should not try to catch, like `OutOfMemoryError`. An `Exception` indicates conditions that a reasonable application might want to catch."
+                },
+                {
+                    "front": "What is the difference between checked and unchecked exceptions?",
+                    "back": "Checked exceptions (subclasses of `Exception` but not `RuntimeException`) must be handled at compile-time (in a `try-catch` block or declared with `throws`). Unchecked exceptions (subclasses of `RuntimeException`) are not required to be handled."
+                },
+                {
+                    "front": "What is the purpose of the `try-catch-finally` block?",
+                    "back": "`try`: Contains code that might throw an exception. `catch`: Catches and handles a specific type of exception. `finally`: Contains code that is always executed, whether an exception occurred or not, for cleanup purposes."
+                },
+                {
+                    "front": "Can a `try` block exist without a `catch` block?",
+                    "back": "Yes, but it must have a `finally` block. A `try` block must be followed by either at least one `catch` block or a `finally` block."
+                },
+                {
+                    "front": "What is the `throw` keyword?",
+                    "back": "The `throw` keyword is used to explicitly throw a single exception from a method or block of code."
+                },
+                {
+                    "front": "What is the `throws` keyword?",
+                    "back": "The `throws` keyword is used in a method signature to declare the types of checked exceptions that the method might throw but does not handle internally."
+                },
+                {
+                    "front": "What is the try-with-resources statement?",
+                    "back": "A `try` statement that declares one or more resources (like file streams) which must implement the `AutoCloseable` interface. The resources are automatically closed at the end of the statement, avoiding the need for a `finally` block for cleanup."
+                },
+                {
+                    "front": "What is the Java Collections Framework?",
+                    "back": "A unified architecture for representing and manipulating collections. It consists of interfaces (like `List`, `Set`, `Map`), implementations (like `ArrayList`, `HashSet`, `HashMap`), and algorithms."
+                },
+                {
+                    "front": "What is the root interface of the Collections Framework?",
+                    "back": "The `Collection` interface. Note that `Map` is also part of the framework but does not extend `Collection`."
+                },
+                {
+                    "front": "What is a `List`?",
+                    "back": "An ordered collection of elements that allows duplicate values. Elements can be accessed by their integer index."
+                },
+                {
+                    "front": "What is a `Set`?",
+                    "back": "A collection that contains no duplicate elements. It models the mathematical set abstraction."
+                },
+                {
+                    "front": "What is a `Map`?",
+                    "back": "An object that maps unique keys to values. It is a collection of key-value pairs."
+                },
+                {
+                    "front": "What is the difference between `ArrayList` and `LinkedList`?",
+                    "back": "`ArrayList` is backed by a dynamic array and provides fast random access (by index). `LinkedList` is backed by a doubly-linked list and is faster for adding/removing elements from the beginning or end."
+                },
+                {
+                    "front": "What is the difference between `HashSet`, `LinkedHashSet`, and `TreeSet`?",
+                    "back": "`HashSet` is unordered and unsorted. `LinkedHashSet` maintains insertion order. `TreeSet` stores elements in a sorted order (natural ordering or by a `Comparator`)."
+                },
+                {
+                    "front": "What is the difference between `HashMap`, `LinkedHashMap`, and `TreeMap`?",
+                    "back": "`HashMap` is unordered. `LinkedHashMap` maintains insertion order. `TreeMap` stores key-value pairs sorted by key."
+                },
+                {
+                    "front": "How does a `HashMap` work internally?",
+                    "back": "It stores key-value pairs in an array of 'buckets'. It uses the key's `hashCode()` to determine the bucket index. If multiple keys map to the same bucket (a collision), their entries are stored in a linked list or a balanced tree within that bucket."
+                },
+                {
+                    "front": "What is the load factor of a `HashMap`?",
+                    "back": "A measure of how full the hash table is allowed to get before its capacity is automatically increased. The default is 0.75, meaning the map is resized when it's 75% full."
+                },
+                {
+                    "front": "What is an `Iterator`?",
+                    "back": "An object used to traverse through the elements of a collection. It provides `hasNext()`, `next()`, and `remove()` methods."
+                },
+                {
+                    "front": "What is the difference between `Iterator` and `ListIterator`?",
+                    "back": "`ListIterator` is specific to `List`s and provides additional functionality, such as iterating backwards (`hasPrevious()`, `previous()`) and adding/setting elements."
+                },
+                {
+                    "front": "What is a fail-fast iterator?",
+                    "back": "An iterator that immediately throws a `ConcurrentModificationException` if the underlying collection is structurally modified (e.g., by adding or removing elements) by any means other than the iterator's own `remove()` method."
+                },
+                {
+                    "front": "What is the difference between `Comparable` and `Comparator`?",
+                    "back": "`Comparable` is an interface used to define the 'natural ordering' of a class by implementing its `compareTo()` method. `Comparator` is an interface used to define custom, external orderings by implementing its `compare()` method."
+                },
+                {
+                    "front": "What are Generics in Java?",
+                    "back": "A feature that allows types (classes and interfaces) to be parameters when defining classes, interfaces, and methods. It provides compile-time type safety and avoids the need for explicit type casting."
+                },
+                {
+                    "front": "What is a type wildcard (`?`) in Generics?",
+                    "back": "The wildcard `?` represents an unknown type. It can be used as a parameter type to make a method more flexible. It can be bounded (`? extends Type` for an upper bound, `? super Type` for a lower bound)."
+                },
+                {
+                    "front": "What is type erasure?",
+                    "back": "The process by which the Java compiler removes generic type information after checking it for type safety. This ensures backward compatibility with older Java versions that do not have generics."
+                },
+                {
+                    "front": "What is a lambda expression (Java 8+)?",
+                    "back": "An anonymous function that provides a clear and concise way to represent one method interface using an expression. It's used to implement functional interfaces."
+                },
+                {
+                    "front": "What is a functional interface?",
+                    "back": "An interface that contains exactly one abstract method. It can be annotated with `@FunctionalInterface`, which is a good practice but not required."
+                },
+                {
+                    "front": "What is the Stream API (Java 8+)?",
+                    "back": "A new abstraction for processing sequences of elements from a source (like a collection). Streams support functional-style operations like `filter`, `map`, and `reduce`."
+                },
+                {
+                    "front": "What is the difference between intermediate and terminal operations in a Stream?",
+                    "back": "Intermediate operations (e.g., `filter`, `map`) return a new stream and are lazy (not executed until a terminal operation is invoked). Terminal operations (e.g., `forEach`, `collect`) produce a result or side-effect and trigger the stream processing."
+                },
+                {
+                    "front": "What is the `Optional` class (Java 8+)?",
+                    "back": "A container object which may or may not contain a non-null value. It is used to represent optional values instead of returning `null`, helping to avoid `NullPointerException`."
+                },
+                {
+                    "front": "What is the `java.time` package (Java 8+)?",
+                    "back": "A modern, immutable, and thread-safe API for working with dates and times, replacing the old `java.util.Date` and `java.util.Calendar` classes."
+                },
+                {
+                    "front": "What is multithreading?",
+                    "back": "The ability of a program to execute multiple threads concurrently, allowing it to perform multiple tasks at the same time."
+                },
+                {
+                    "front": "What are the two ways to create a thread in Java?",
+                    "back": "1. By extending the `Thread` class and overriding its `run()` method. 2. By implementing the `Runnable` interface and passing an instance of it to a `Thread`'s constructor."
+                },
+                {
+                    "front": "Which way of creating a thread is preferred and why?",
+                    "back": "Implementing the `Runnable` interface is preferred because it allows the class to extend another class (Java doesn't support multiple inheritance of classes) and promotes better separation of concerns."
+                },
+                {
+                    "front": "What are the states in a thread's lifecycle?",
+                    "back": "The main states are: `NEW`, `RUNNABLE`, `BLOCKED`, `WAITING`, `TIMED_WAITING`, and `TERMINATED`."
+                },
+                {
+                    "front": "What is the `synchronized` keyword?",
+                    "back": "A keyword used to create a synchronized block or method, which can only be executed by one thread at a time. It's a mechanism for controlling access to shared resources and preventing race conditions."
+                },
+                {
+                    "front": "What is a monitor (or lock)?",
+                    "back": "An intrinsic lock associated with every object in Java. The `synchronized` keyword uses this monitor to control access. A thread must acquire the monitor before it can enter a synchronized block/method."
+                },
+                {
+                    "front": "What is the difference between `wait()`, `notify()`, and `notifyAll()`?",
+                    "back": "These methods of the `Object` class are used for inter-thread communication. `wait()` causes the current thread to release the lock and wait. `notify()` wakes up a single waiting thread. `notifyAll()` wakes up all waiting threads."
+                },
+                {
+                    "front": "What is the `volatile` keyword?",
+                    "back": "`volatile` ensures that any read of a volatile variable will see the most recent write from any thread. It guarantees visibility but not atomicity."
+                },
+  
+                {
+                    "front": "What is a race condition?",
+                    "back": "A situation where the result of a computation depends on the unpredictable timing or interleaving of multiple threads accessing shared resources. `synchronized` is used to prevent this."
+                },
+                {
+                    "front": "What is a deadlock?",
+                    "back": "A situation where two or more threads are blocked forever, each waiting for the other to release a resource that it needs."
+                },
+                {
+                    "front": "What is the Executor framework?",
+                    "back": "A framework in the `java.util.concurrent` package for managing a pool of worker threads. It separates thread creation and management from the rest of the application logic."
+                },
+                {
+                    "front": "What is the difference between a `Callable` and a `Runnable`?",
+                    "back": "`Runnable`'s `run()` method is `void` and cannot throw a checked exception. `Callable`'s `call()` method returns a result (via a `Future` object) and can throw an exception."
+                },
+                {
+                    "front": "What is a `Future` in Java concurrency?",
+                    "back": "A `Future` represents the result of an asynchronous computation. It provides methods to check if the computation is complete, to wait for its completion, and to retrieve the result."
+                },
+                {
+                    "front": "What is `ConcurrentHashMap`?",
+                    "back": "A thread-safe implementation of the `Map` interface. It provides much higher concurrency than a `Hashtable` or a `synchronized HashMap` by using a finer-grained locking mechanism."
+                },
+                {
+                    "front": "What is serialization?",
+                    "back": "The process of converting an object's state into a byte stream, which can then be saved to a file or sent over a network. The object's class must implement the `Serializable` marker interface."
+                },
+                {
+                    "front": "What is deserialization?",
+                    "back": "The reverse process of recreating an object from its serialized byte stream."
+                },
+                {
+                    "front": "What is the `transient` keyword?",
+                    "back": "A keyword applied to an instance variable to indicate that it should not be included when the object is serialized."
+                },
+                {
+                    "front": "What is Garbage Collection (GC)?",
+                    "back": "The process by which the JVM automatically reclaims memory occupied by objects that are no longer referenced by the program."
+                },
+                {
+                    "front": "How can you suggest to the JVM that it run the garbage collector?",
+                    "back": "By calling `System.gc()`. However, this is only a suggestion and there is no guarantee that the JVM will actually run the garbage collector."
+                },
+                {
+                    "front": "What are the main memory areas of the JVM?",
+                    "back": "The main areas are the Heap (for objects and instance variables), the Stack (for local variables and method calls), the Method Area (for class-level data), and PC Registers."
+                },
+                {
+                    "front": "What is the difference between Heap and Stack memory?",
+                    "back": "The Heap is where all objects are allocated. It is shared among all threads. The Stack is where local variables and method call frames are stored. Each thread has its own private stack."
+                },
+                {
+                    "front": "What is a `varargs` (variable-length argument)?",
+                    "back": "A feature that allows a method to accept zero or more arguments of a specified type. It is declared with a type followed by an ellipsis (`...`). Inside the method, it is treated as an array."
+                },
+                {
+                    "front": "What is a record (Java 16+)?",
+                    "back": "A special kind of class in Java that is an immutable data carrier. It automatically provides implementations for the constructor, accessors, `equals()`, `hashCode()`, and `toString()`."
+                },
+                {
+                    "front": "What is the `printf` method?",
+                    "back": "A method in `System.out` (and `String.format`) that allows for formatted string output, similar to the `printf` function in C, using format specifiers like `%s`, `%d`, and `%f`."
+                },
+                {
+                    "front": "What is the enhanced for loop (for-each loop)?",
+                    "back": "A simplified loop for iterating over arrays or collections. The syntax is `for (Type variable : collection) { ... }`."
+                },
+                {
+                    "front": "What is the `switch` statement?",
+                    "back": "A control flow statement that allows a variable to be tested for equality against a list of values (cases)."
+                },
+                {
+                    "front": "What are sealed classes (Java 17+)?",
+                    "back": "Classes or interfaces that restrict which other classes or interfaces may extend or implement them. This provides more control over inheritance."
+                },
+                {
+                    "front": "What is a static import?",
+                    "back": "A feature that allows members (fields and methods) of a class which are declared as `public static` to be used in Java code without specifying the class name."
+                },
+                {
+                    "front": "What is the `assert` keyword?",
+                    "back": "A keyword used to test assumptions about your program. If the assertion is false, an `AssertionError` is thrown. Assertions must be explicitly enabled at runtime."
+                },
+                {
+                    "front": "What is an Anonymous Inner Class?",
+                    "back": "A class without a name that is defined and instantiated all in one step. It's typically used for one-time-use classes, often as an argument to a method (e.g., for event listeners)."
+                },
+                {
+                    "front": "What is the difference between `==` and `.equals()` for strings?",
+                    "back": "`==` checks if two string references point to the exact same object in memory (reference equality). `.equals()` checks if the character sequences of the two strings are the same (value equality)."
+                },
+                {
+                    "front": "What is method hiding?",
+                    "back": "If a subclass defines a static method with the same signature as a static method in the superclass, the method in the subclass hides the one in the superclass."
+                },
+                {
+                    "front": "Can a `final` method be overloaded?",
+                    "back": "Yes. `final` prevents overriding, not overloading. Overloading involves changing the parameter list, which creates a distinct method."
+                },
+                {
+                    "front": "Can a constructor be `final`?",
+                    "back": "No. A constructor cannot be declared as `final` because it is never inherited and therefore cannot be overridden."
+                },
+                {
+                    "front": "What is the `strictfp` keyword?",
+                    "back": "`strictfp` is a keyword used to ensure that floating-point calculations are platform-independent and produce identical results on all platforms."
+                },
+                {
+                    "front": "What is `StackOverflowError`?",
+                    "back": "An `Error` thrown by the JVM when the stack memory is exhausted, typically due to excessively deep or infinite recursion."
+                },
+                {
+                    "front": "What is `OutOfMemoryError`?",
+                    "back": "An `Error` thrown by the JVM when it cannot allocate an object because it is out of memory and the garbage collector cannot free up any more space."
+                },
+                {
+                    "front": "What are wrapper classes?",
+                    "back": "Classes that encapsulate a primitive data type within an object. Examples include `Integer` for `int`, `Double` for `double`, and `Boolean` for `boolean`."
+                },
+                {
+                    "front": "Can you have multiple `public` classes in a single source file?",
+                    "back": "No. A single Java source file can have at most one `public` class, and the file name must match the public class name."
+                },
+                {
+                    "front": "What is the `System` class?",
+                    "back": "A `final` class in the `java.lang` package that provides access to system resources. Its fields `in`, `out`, and `err` represent standard input, output, and error streams."
+                },
+                {
+                    "front": "What is the `Math` class?",
+                    "back": "A `final` class in `java.lang` that contains methods for performing basic numeric operations such as elementary exponential, logarithm, square root, and trigonometric functions."
+                },
+                {
+                    "front": "What is a ternary operator?",
+                    "back": "A conditional operator that is a shorthand for an `if-else` statement. The syntax is `condition ? value_if_true : value_if_false`."
+                },
+                {
+                    "front": "What is `java.io.File` class?",
+                    "back": "A class that represents a file or directory path in an abstract, platform-independent way. It is used for file system operations like creating, deleting, and renaming files."
+                },
+         
+                {
+                    "front": "What is the difference between `Reader/Writer` and `InputStream/OutputStream`?",
+                    "back": "`InputStream/OutputStream` are for reading and writing binary data (byte streams). `Reader/Writer` are for reading and writing character data (character streams) and handle character encoding."
+                },
+                {
+                    "front": "What is `BufferedReader`?",
+                    "back": "A class that reads text from a character-input stream, buffering characters so as to provide for the efficient reading of characters, arrays, and lines."
+                },
+                {
+                    "front": "What is a deep copy versus a shallow copy?",
+                    "back": "A shallow copy of an object copies its top-level fields. If a field is a reference to another object, only the reference is copied. A deep copy recursively copies all referenced objects, creating a fully independent copy."
+                },
+                {
+                    "front": "What is the `Cloneable` interface?",
+                    "back": "A marker interface used to indicate that an object can be cloned (a copy can be made) using the `Object.clone()` method."
+                },
+                {
+                    "front": "What is a covariant return type?",
+                    "back": "A feature that allows an overriding method in a subclass to have a more specific return type than the method in its superclass."
+                },
+                {
+                    "front": "What is the diamond problem in multiple inheritance?",
+                    "back": "A problem that can arise when a class inherits from two classes that have a common ancestor. If a method in the ancestor is overridden by both parent classes, the child class has an ambiguity about which version to inherit. Java avoids this by not allowing multiple inheritance of classes."
+                },
+                {
+                    "front": "How do interfaces solve the diamond problem?",
+                    "back": "Before Java 8, interfaces couldn't have implementations, so there was no ambiguity. With Java 8 default methods, if a class implements two interfaces with the same default method, the class is required to provide its own implementation, thus resolving the ambiguity."
+                },
+                {
+                    "front": "What is reflection?",
+                    "back": "An API that allows a program to examine or modify the runtime behavior of applications. It can be used to inspect classes, interfaces, fields, and methods at runtime, and to instantiate objects and invoke methods dynamically."
+                },
+                {
+                    "front": "What are some drawbacks of reflection?",
+                    "back": "It can have performance overhead, break encapsulation by accessing private members, and make code harder to understand and maintain. It also bypasses compile-time type checking."
+                },
+                {
+                    "front": "What is the `new` operator?",
+                    "back": "An operator used to create instances of objects. It allocates memory for a new object on the heap and returns a reference to that memory."
+                },
+                {
+                    "front": "What is an `AtomicInteger`?",
+                    "back": "A class in `java.util.concurrent.atomic` that provides an `int` value that can be updated atomically. It is often used as a thread-safe counter without explicit synchronization."
+                },
+                {
+                    "front": "What is the difference between `Hashtable` and `HashMap`?",
+                    "back": "`Hashtable` is synchronized (thread-safe) and does not allow null keys or values. `HashMap` is not synchronized and allows one null key and multiple null values. `HashMap` is generally preferred in single-threaded environments."
+                },
+                {
+                    "front": "What is a `WeakHashMap`?",
+                    "back": "A `Map` implementation whose entries will be automatically removed by the garbage collector if their keys are no longer referenced elsewhere. It uses 'weak references' for its keys."
+                },
+                {
+                    "front": "What is the purpose of the `collect()` method in the Stream API?",
+                    "back": "It is a terminal operation used to perform a mutable reduction on the elements of the stream, such as collecting them into a `List`, `Set`, or `Map`."
+                },
+                {
+                    "front": "What is a method reference in Java 8?",
+                    "back": "A shorthand syntax for a lambda expression that executes just one method. It's written with a `::` separator. For example, `System.out::println`."
+                },
+                {
+                    "front": "What is `forEach()` method in Java 8?",
+                    "back": "It provides a simple way to iterate over collections and streams. For collections, it's a default method. For streams, it's a terminal operation."
+                },
+                {
+                    "front": "What is the difference between `map()` and `flatMap()` in the Stream API?",
+                    "back": "`map()` transforms each element of a stream into another single element. `flatMap()` transforms each element into a stream of other elements, and then flattens these streams into a single new stream."
+                },
+                {
+                    "front": "What is a package in Java?",
+                    "back": "A namespace that organizes a set of related classes and interfaces. It helps to prevent naming conflicts and control access."
+                },
+              
+                {
+                    "front": "What is classpath?",
+                    "back": "The path where the Java compiler and JVM search for class files and packages. It can be set using an environment variable or command-line options."
+                },
+                {
+                    "front": "What is the `jar` command?",
+                    "back": "A tool used to package Java classes, associated metadata, and resources (like text, images) into a single file with a `.jar` extension."
+                },
+                {
+                    "front": "What is the `javadoc` tool?",
+                    "back": "A tool that parses the declarations and documentation comments in a set of source files and generates a set of HTML pages describing the classes, interfaces, constructors, methods, and fields."
+                },
+                {
+                    "front": "What is the Singleton design pattern?",
+                    "back": "A creational design pattern that ensures a class has only one instance and provides a global point of access to it."
+                },
+                {
+                    "front": "What is the Factory design pattern?",
+                    "back": "A creational design pattern that provides an interface for creating objects in a superclass but allows subclasses to alter the type of objects that will be created."
+                },
+                {
+                    "front": "What is the Decorator design pattern?",
+                    "back": "A structural design pattern that allows behavior to be added to an individual object, dynamically, without affecting the behavior of other objects from the same class."
+                },
+                {
+                    "front": "What is the Observer design pattern?",
+                    "back": "A behavioral design pattern where an object (the subject) maintains a list of its dependents (observers) and notifies them automatically of any state changes."
+                },
+                {
+                    "front": "Can you call `wait()` outside of a synchronized block?",
+                    "back": "No. Doing so will result in an `IllegalMonitorStateException` because a thread must own the object's monitor (lock) before it can wait on it."
+                },
+                {
+                    "front": "What is thread starvation?",
+                    "back": "A situation where a thread is unable to gain regular access to shared resources and is unable to make progress because other 'greedy' threads are monopolizing the resources."
+                },
+                {
+                    "front": "What is a `ReentrantLock`?",
+                    "back": "A class that implements the `Lock` interface with the same basic behavior as `synchronized`, but with extended capabilities like timed lock waits, interruptible lock waits, and fair lock acquisition policies."
+                },
+                {
+                    "front": "What does 'reentrant' mean in the context of `ReentrantLock`?",
+                    "back": "It means that a thread that already holds the lock can acquire it again without blocking. The lock maintains a hold count, which is incremented on each acquisition and decremented on each release."
+                },
+                {
+                    "front": "What is a `Semaphore`?",
+                    "back": "A synchronization aid that maintains a set of permits. It is used to control access to a shared resource that can only be used by a fixed number of threads at a time."
+                },
+                {
+                    "front": "What is a `CountDownLatch`?",
+                    "back": "A synchronization aid that allows one or more threads to wait until a set of operations being performed in other threads completes. It is initialized with a count, which is decremented by worker threads."
+                },
+                {
+                    "front": "What is the `StringBuilder` `capacity` vs `length`?",
+                    "back": "`length()` is the number of characters currently in the sequence. `capacity()` is the amount of storage currently allocated, which can be larger than the length."
+                },
+                {
+                    "front": "What is the `intern()` method on a String?",
+                    "back": "It returns a canonical representation for the string object. It searches the string pool for a string equal to this `String` object. If found, the string from the pool is returned. Otherwise, this `String` object is added to the pool."
+                },
+                {
+                    "front": "What is the difference between `subSequence()` and `substring()`?",
+                    "back": "Both return a part of the string. The key difference is the return type: `substring()` returns a `String`, while `subSequence()` returns a `CharSequence`. `String` implements `CharSequence`."
+                },
+                {
+                    "front": "Can you declare a top-level class as `private` or `protected`?",
+                    "back": "No. A top-level class can only have `public` or `default` (package-private) access."
+                },
+                {
+                    "front": "What is a Phantom Reference?",
+                    "back": "A type of reference used for scheduling pre-mortem cleanup actions. An object becomes phantom reachable after it has been finalized. They are processed by a `ReferenceQueue`."
+                },
+                {
+                    "front": "What is the difference between `Set` and `Map`?",
+                    "back": "`Set` is a collection of unique values. `Map` is a collection of unique keys mapped to values. A `Map` can be seen as a set of key-value pairs."
+                },
+                {
+                    "front": "What is a `finally` block guaranteed to execute?",
+                    "back": "Almost always. The only exceptions are if the JVM exits (`System.exit()`) or if a catastrophic error (like a hardware failure) occurs in the `try` or `catch` block."
+                },
+                {
+                    "front": "What is `ThreadLocal`?",
+                    "back": "A class that provides thread-local variables. Each thread that accesses one has its own, independently initialized copy of the variable. It's a way to achieve thread safety for non-thread-safe objects."
+                },
+                {
+                    "front": "What is a text block (Java 15+)?",
+                    "back": "A multi-line string literal that avoids the need for most escape sequences. It starts with three double-quote characters (`\"\"\"`) followed by a line terminator and ends with `\"\"\"`."
+                },
+                {
+                    "front": "Can an enum implement an interface?",
+                    "back": "Yes, an `enum` can implement one or more interfaces."
+                },
+                {
+                    "front": "Can an enum extend a class?",
+                    "back": "No. All enums implicitly extend `java.lang.Enum`, and since Java does not support multiple class inheritance, they cannot extend another class."
+                },
+                {
+                    "front": "What is Just-In-Time (JIT) compilation?",
+                    "back": "A feature of the JVM that improves performance by compiling frequently executed bytecode into native machine code at runtime."
+                },
+                {
+                    "front": "What is the `reduce()` operation in the Stream API?",
+                    "back": "A terminal operation that performs a reduction on the elements of the stream, using an identity value and an associative accumulation function, to produce a single result."
+                },
+                {
+                    "front": "Can an interface have a constructor?",
+                    "back": "No. An interface cannot be instantiated directly, so it cannot have a constructor."
+                },
+                {
+                    "front": "What happens when you add a duplicate element to a `HashSet`?",
+                    "back": "The `add()` method will return `false`, and the set will not be modified because `HashSet` does not allow duplicate elements."
+                },
+                {
+                    "front": "What is a `PriorityQueue`?",
+                    "back": "An unbounded queue based on a priority heap. The elements are ordered according to their natural ordering, or by a `Comparator` provided at queue construction time."
+                }
+            ]
         }
     ]
 }
