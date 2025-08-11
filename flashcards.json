@@ -1,28 +1,2158 @@
 {
     "languages": [
         {
-            "name": "JavaScript",
+            "name": "HTML",
             "flashcards": [
-                {
-                    "front": "What does flex: 1 do in CSS Flexbox?",
-                    "back": "It makes the item grow to fill available space equally with other flex items."
+                  {
+                    "front": "What does HTML stand for?",
+                    "back": "HyperText Markup Language."
                 },
                 {
-                    "front": "What is a closure in JavaScript?",
-                    "back": "A closure is a function that retains access to its outer scope even after the outer function has returned."
+                    "front": "What is the primary purpose of HTML?",
+                    "back": "To structure content on a web page, defining elements like headings, paragraphs, and images."
+                },
+                {
+                    "front": "What is the correct DOCTYPE declaration for HTML5?",
+                    "back": "<!DOCTYPE html>"
+                },
+                {
+                    "front": "What is the purpose of the DOCTYPE declaration?",
+                    "back": "It is an instruction to the web browser about what version of HTML the page is written in."
+                },
+                {
+                    "front": "What is the root element of an HTML document?",
+                    "back": "The <html> element."
+                },
+                {
+                    "front": "What are the two main child elements inside the <html> element?",
+                    "back": "The <head> and <body> elements."
+                },
+                {
+                    "front": "What kind of information goes into the <head> element?",
+                    "back": "Metadata about the document, such as the title, character set, styles, scripts, and other meta information."
+                },
+                {
+                    "front": "What is the purpose of the <body> element?",
+                    "back": "It contains all the visible content of a web page, like text, images, videos, and links."
+                },
+                {
+                    "front": "How do you add a comment in HTML?",
+                    "back": "By enclosing the text in <!-- and -->. For example: <!-- This is a comment -->."
+                },
+                {
+                    "front": "What is the difference between an HTML element and an HTML tag?",
+                    "back": "A tag is the opening or closing part (e.g., <p> or </p>). An element includes the start tag, the content, and the end tag."
+                },
+                {
+                    "front": "What is a void or empty element in HTML? Give an example.",
+                    "back": "An element that does not have a closing tag or content. Examples include <br>, <hr>, and <img>."
+                },
+                {
+                    "front": "Are HTML tags case-sensitive?",
+                    "back": "No, but the W3C standard recommends using lowercase for tag and attribute names for consistency."
+                },
+                {
+                    "front": "What tag is used to define the title of the document shown in the browser's title bar?",
+                    "back": "The <title> tag, which is placed inside the <head> section."
+                },
+                {
+                    "front": "What are the six levels of heading tags in HTML?",
+                    "back": "<h1>, <h2>, <h3>, <h4>, <h5>, and <h6>, with <h1> being the most important."
+                },
+                {
+                    "front": "What is the purpose of the <p> tag?",
+                    "back": "To define a paragraph of text."
+                },
+                {
+                    "front": "How do you create a hyperlink in HTML?",
+                    "back": "Using the <a> (anchor) tag with the href attribute. Example: <a href='https://example.com'>Click here</a>."
+                },
+                {
+                    "front": "What is the purpose of the `href` attribute in an anchor tag?",
+                    "back": "It specifies the URL or destination of the link."
+                },
+                {
+                    "front": "How do you make a link open in a new browser tab?",
+                    "back": "By adding the attribute target='_blank' to the <a> tag."
+                },
+                {
+                    "front": "How do you display an image on a web page?",
+                    "back": "Using the <img> tag with the `src` attribute pointing to the image file."
+                },
+                {
+                    "front": "What is the purpose of the `alt` attribute on an <img> tag?",
+                    "back": "It provides alternative text for an image if it cannot be displayed. It's crucial for accessibility and SEO."
+                },
+                {
+                    "front": "What tag creates an unordered (bulleted) list?",
+                    "back": "The <ul> tag, with each list item defined by a <li> tag."
+                },
+                {
+                    "front": "What tag creates an ordered (numbered) list?",
+                    "back": "The <ol> tag, with each list item defined by a <li> tag."
+                },
+                {
+                    "front": "What is the basic structure of an HTML table?",
+                    "back": "A <table> element containing <tr> (table row) elements, which in turn contain <td> (table data) or <th> (table header) elements."
+                },
+                {
+                    "front": "What is the difference between <td> and <th>?",
+                    "back": "<th> defines a header cell in a table, which is typically bold and centered. <td> defines a standard data cell."
+                },
+                {
+                    "front": "How do you define the character set for your HTML document?",
+                    "back": "By using the <meta> tag inside the <head>: <meta charset='UTF-8'>."
+                },
+                {
+                    "front": "What is the difference between a block-level element and an inline element?",
+                    "back": "A block-level element (like <div> or <p>) starts on a new line and takes up the full width available. An inline element (like <span> or <a>) does not start on a new line and only takes up as much width as necessary."
+                },
+                {
+                    "front": "What is the purpose of the <div> tag?",
+                    "back": "It is a generic block-level container used to group other HTML elements for styling or scripting purposes."
+                },
+                {
+                    "front": "What is the purpose of the <span> tag?",
+                    "back": "It is a generic inline container used to group text or other inline elements, often for styling a small part of a larger text."
+                },
+                {
+                    "front": "What are semantic HTML tags?",
+                    "back": "Tags that clearly describe their meaning to both the browser and the developer, such as <header>, <footer>, <article>, and <section>."
+                },
+                {
+                    "front": "What is the purpose of the <header> element?",
+                    "back": "It represents introductory content, typically a group of introductory or navigational aids. It can contain headings, logos, search forms, etc."
+                },
+                {
+                    "front": "What is the purpose of the <footer> element?",
+                    "back": "It defines a footer for a document or section, typically containing authorship information, copyright data, or links to related documents."
+                },
+                {
+                    "front": "What is the purpose of the <nav> element?",
+                    "back": "It defines a set of navigation links."
+                },
+                {
+                    "front": "What is the purpose of the <article> element?",
+                    "back": "It specifies independent, self-contained content, such as a forum post, a blog entry, or a news story."
+                },
+                {
+                    "front": "What is the purpose of the <section> element?",
+                    "back": "It defines a thematic grouping of content, typically with a heading."
+                },
+                {
+                    "front": "What is the difference between <section> and <article>?",
+                    "back": "<article> is for self-contained content that could be distributed on its own. <section> is for grouping related content within a document."
+                },
+                {
+                    "front": "What is the purpose of the <aside> element?",
+                    "back": "It defines content aside from the content it is placed in, like a sidebar or a callout box."
+                },
+                {
+                    "front": "What is the difference between the <b> and <strong> tags?",
+                    "back": "Both make text bold, but <strong> is a semantic tag indicating that the text has strong importance, while <b> is a presentational tag for styling."
+                },
+                {
+                    "front": "What is the difference between the <i> and <em> tags?",
+                    "back": "Both italicize text, but <em> is a semantic tag indicating emphasis, while <i> is a presentational tag for styling (e.g., for a technical term or a thought)."
+                },
+                {
+                    "front": "What is the <form> element used for?",
+                    "back": "To create an HTML form for user input."
+                },
+                {
+                    "front": "What are two common values for the `method` attribute of a form?",
+                    "back": "GET and POST."
+                },
+                {
+                    "front": "What is the difference between the GET and POST methods in a form?",
+                    "back": "GET appends form data to the URL (visible, limited length). POST sends form data in the HTTP request body (not visible, no size limit)."
+                },
+                {
+                    "front": "What does the `action` attribute of a form specify?",
+                    "back": "The URL of the page or script that will process the form data when it is submitted."
+                },
+                {
+                    "front": "What is the <input> tag used for?",
+                    "back": "To create various types of input controls in a form, specified by its `type` attribute."
+                },
+                {
+                    "front": "Name five different `type` attributes for the <input> tag.",
+                    "back": "Common types include `text`, `password`, `checkbox`, `radio`, `submit`, `file`, `date`, `email`, and `number`."
+                },
+                {
+                    "front": "What is the purpose of the <label> tag in a form?",
+                    "back": "It defines a label for an <input> element, improving accessibility by allowing users to click the label to focus the input."
+                },
+                {
+                    "front": "How do you associate a <label> with an <input> element?",
+                    "back": "By using the `for` attribute on the <label>, whose value matches the `id` of the <input> element."
+                },
+                {
+                    "front": "What does the `placeholder` attribute do in an input field?",
+                    "back": "It provides a short hint that describes the expected value of an input field."
+                },
+                {
+                    "front": "What does the `required` attribute do?",
+                    "back": "It specifies that an input field must be filled out before submitting the form."
+                },
+                {
+                    "front": "How do you create a dropdown list in HTML?",
+                    "back": "Using the <select> tag, with each option defined by an <option> tag inside it."
+                },
+                {
+                    "front": "How do you create a multi-line text input field?",
+                    "back": "Using the <textarea> tag."
+                },
+                {
+                    "front": "What tag is used for a clickable button in a form?",
+                    "back": "The <button> tag or <input type='submit'>."
+                },
+                {
+                    "front": "What is the difference between `<button type='submit'>` and `<input type='submit'>`?",
+                    "back": "The <button> element can contain HTML content (like text and images), while the <input> element cannot."
+                },
+                {
+                    "front": "What is an `iframe` used for?",
+                    "back": "An `iframe` (Inline Frame) is used to embed another HTML document within the current one."
+                },
+                {
+                    "front": "What are some security concerns with `iframes`?",
+                    "back": "They can be a vector for clickjacking attacks. Using attributes like `sandbox` can help mitigate risks."
+                },
+                {
+                    "front": "What is the purpose of the `colspan` attribute in a table?",
+                    "back": "It allows a single table cell (<td> or <th>) to span across multiple columns."
+                },
+                {
+                    "front": "What is the purpose of the `rowspan` attribute in a table?",
+                    "back": "It allows a single table cell (<td> or <th>) to span across multiple rows."
+                },
+                {
+                    "front": "What is the purpose of the `<thead>`, `<tbody>`, and `<tfoot>` tags?",
+                    "back": "They group table content into a header, body, and footer section, which helps with styling and accessibility."
+                },
+                {
+                    "front": "What tag is used to embed audio files in HTML5?",
+                    "back": "The <audio> tag."
+                },
+                {
+                    "front": "What tag is used to embed video files in HTML5?",
+                    "back": "The <video> tag."
+                },
+                {
+                    "front": "What does the `controls` attribute do on <audio> and <video> tags?",
+                    "back": "It displays the default player controls, such as play, pause, and volume."
+                },
+                {
+                    "front": "What is the purpose of the <source> element inside an <audio> or <video> tag?",
+                    "back": "To specify multiple media resources for the media element, allowing the browser to choose the most suitable format it supports."
+                },
+                {
+                    "front": "What is the purpose of the global `id` attribute?",
+                    "back": "It specifies a unique identifier for an HTML element. The value must be unique within the entire document."
+                },
+                {
+                    "front": "What is the purpose of the global `class` attribute?",
+                    "back": "It specifies one or more class names for an element, used to select and style elements with CSS or manipulate them with JavaScript. Multiple elements can share the same class."
+                },
+                {
+                    "front": "What is the difference between `id` and `class` attributes?",
+                    "back": "An `id` must be unique in the entire document, while a `class` can be used on multiple elements."
+                },
+                {
+                    "front": "What are HTML character entities?",
+                    "back": "They are used to display reserved characters or characters not present on the keyboard. They start with an ampersand (&) and end with a semicolon (;)."
+                },
+                {
+                    "front": "How would you write a non-breaking space in HTML?",
+                    "back": "Using the character entity `&nbsp;`."
+                },
+                {
+                    "front": "How would you display a less-than sign (<) in HTML?",
+                    "back": "Using the character entity `&lt;`."
+                },
+                {
+                    "front": "What is the purpose of the `<link>` tag?",
+                    "back": "It defines the relationship between the current document and an external resource, most commonly used to link to external CSS stylesheets."
+                },
+                {
+                    "front": "Where is the `<link>` tag typically placed?",
+                    "back": "Inside the `<head>` section of the document."
+                },
+                {
+                    "front": "What is the purpose of the `<script>` tag?",
+                    "back": "To embed or reference executable client-side scripts, usually JavaScript."
+                },
+                {
+                    "front": "What is the difference between an absolute and a relative URL?",
+                    "back": "An absolute URL is a full web address (e.g., https://www.example.com/page.html). A relative URL points to a file within the same website (e.g., /images/pic.jpg)."
+                },
+                {
+                    "front": "What does the `rel='stylesheet'` attribute mean?",
+                    "back": "It specifies that the linked external resource is a stylesheet for the current document."
+                },
+                {
+                    "front": "What is the `main` element used for?",
+                    "back": "It specifies the main, dominant content of the <body> of a document. There should only be one <main> element per page."
+                },
+                {
+                    "front": "What is the purpose of the `<figure>` and `<figcaption>` elements?",
+                    "back": "The `<figure>` element represents self-contained content (like an image or diagram), and the `<figcaption>` element provides a caption or legend for it."
+                },
+                {
+                    "front": "How do you create a description list?",
+                    "back": "Using the `<dl>` (description list) tag, with `<dt>` (description term) and `<dd>` (description details) tags inside."
+                },
+                {
+                    "front": "What is the purpose of the `target` attribute in a link?",
+                    "back": "It specifies where to open the linked document (e.g., `_self`, `_blank`, `_parent`, `_top`)."
+                },
+                {
+                    "front": "What is the `<pre>` tag used for?",
+                    "back": "It defines preformatted text. The text inside a `<pre>` element is displayed in a fixed-width font, and it preserves both spaces and line breaks."
+                },
+                {
+                    "front": "What is the purpose of the `<code>` tag?",
+                    "back": "It defines a piece of computer code. By default, it's displayed in the browser's default monospace font."
+                },
+                {
+                    "front": "What are `data-*` attributes?",
+                    "back": "Custom data attributes used to store private custom data for the page or application. They are easily accessible via JavaScript."
+                },
+                {
+                    "front": "What is the purpose of the `<mark>` tag?",
+                    "back": "It defines text that should be marked or highlighted for reference purposes."
+                },
+                {
+                    "front": "What is the difference between `<sub>` and `<sup>` tags?",
+                    "back": "`<sub>` defines subscript text (appears half a character below the normal line), and `<sup>` defines superscript text (appears half a character above the normal line)."
+                },
+                {
+                    "front": "What is the purpose of the `<q>` tag?",
+                    "back": "It defines a short, inline quotation. Browsers typically render this by enclosing the text in quotation marks."
+                },
+                {
+                    "front": "How is `<q>` different from `<blockquote>`?",
+                    "back": "`<q>` is for short, inline quotations. `<blockquote>` is a block-level element for longer quotations that are set off from the surrounding text."
+                },
+                {
+                    "front": "What is the `<abbr>` tag used for?",
+                    "back": "To define an abbreviation or an acronym. The optional `title` attribute can provide the full expansion."
+                },
+                {
+                    "front": "What is the purpose of the `<address>` tag?",
+                    "back": "To define contact information (author/owner) for a document or an article. It is usually rendered in italics."
+                },
+                {
+                    "front": "What is the `viewport` meta tag used for?",
+                    "back": "It gives the browser instructions on how to control the page's dimensions and scaling, which is essential for creating responsive websites."
+                },
+                {
+                    "front": "What is a common setting for the `viewport` meta tag for responsive design?",
+                    "back": "<meta name='viewport' content='width=device-width, initial-scale=1.0'>"
+                },
+                {
+                    "front": "What is the difference between `<svg>` and `<canvas>`?",
+                    "back": "`<svg>` is a vector-based XML format for graphics with support for interactivity. `<canvas>` is a pixel-based drawing surface that is rendered with JavaScript."
+                },
+                {
+                    "front": "When would you use SVG over Canvas?",
+                    "back": "Use SVG for resolution-independent graphics that need to scale well, like logos and icons, or when you need event handlers for individual graphical elements."
+                },
+                {
+                    "front": "When would you use Canvas over SVG?",
+                    "back": "Use Canvas for dynamic, pixel-intensive applications like games, visualizations, or real-time video processing where performance is critical."
+                },
+                {
+                    "front": "What is the purpose of the `loading='lazy'` attribute on an `<img>` tag?",
+                    "back": "It instructs the browser to defer loading of off-screen images until the user scrolls near them, which can improve initial page load performance."
+                },
+                {
+                    "front": "How can you make an image a link?",
+                    "back": "By wrapping the `<img>` tag inside an `<a>` tag."
+                },
+                {
+                    "front": "What is an image map?",
+                    "back": "An image with one or more clickable areas. It is defined with the `<map>` tag, which contains `<area>` tags defining the clickable regions."
+                },
+                {
+                    "front": "What does the `download` attribute do on an `<a>` tag?",
+                    "back": "It specifies that the target will be downloaded when a user clicks on the hyperlink, instead of navigating to it."
+                },
+                {
+                    "front": "How do you create a link that dials a phone number?",
+                    "back": "By using the `tel:` prefix in the `href` attribute. Example: `<a href='tel:+1234567890'>Call Us</a>`."
+                },
+                {
+                    "front": "How do you create a link that opens the user's default email client?",
+                    "back": "By using the `mailto:` prefix in the `href` attribute. Example: `<a href='mailto:info@example.com'>Email Us</a>`."
+                },
+                {
+                    "front": "What is the `<caption>` tag used for in a table?",
+                    "back": "To specify a caption or title for a table. It should be the first child element of the `<table>`."
+                },
+                {
+                    "front": "What does the `scope` attribute do on a `<th>` element?",
+                    "back": "It improves table accessibility by specifying whether the header cell is a header for a column (`scope='col'`) or a row (`scope='row'`)."
+                },
+                {
+                    "front": "How can you group columns in a table for styling?",
+                    "back": "Using the `<colgroup>` and `<col>` elements."
+                },
+                {
+                    "front": "In an ordered list (`<ol>`), how can you change the numbering type (e.g., to letters or Roman numerals)?",
+                    "back": "Using the `type` attribute. For example, `type='a'` for lowercase letters, `type='I'` for uppercase Roman numerals."
+                },
+                {
+                    "front": "How can you make an ordered list start from a number other than 1?",
+                    "back": "Using the `start` attribute. For example, `<ol start='50'>`."
+                },
+                {
+                    "front": "How do you disable an input field in a form?",
+                    "back": "By adding the boolean `disabled` attribute to the `<input>` element."
+                },
+                {
+                    "front": "What is the difference between the `disabled` and `readonly` attributes on an input field?",
+                    "back": "A `disabled` input's value is not submitted with the form. A `readonly` input's value cannot be changed by the user but is still submitted."
+                },
+                {
+                    "front": "What is the `<fieldset>` element used for?",
+                    "back": "To group related elements in a form, often drawing a box around them."
+                },
+                {
+                    "front": "What is the `<legend>` element used for?",
+                    "back": "To define a caption for the `<fieldset>` element."
+                },
+                {
+                    "front": "What is the purpose of the `<datalist>` element?",
+                    "back": "It provides an 'autocomplete' feature for `<input>` elements. It contains a list of `<option>` elements that users can choose from."
+                },
+                {
+                    "front": "How do you link a `<datalist>` to an `<input>` field?",
+                    "back": "The `list` attribute on the `<input>` element should have the same value as the `id` of the `<datalist>`."
+                },
+                {
+                    "front": "What does `input type='radio'` create?",
+                    "back": "A radio button, which allows a user to select only one option from a limited number of choices."
+                },
+                {
+                    "front": "How do you group radio buttons so that only one can be selected at a time?",
+                    "back": "By giving them all the same `name` attribute."
+                },
+                {
+                    "front": "What does `input type='checkbox'` create?",
+                    "back": "A checkbox, which allows a user to select one or more options from a set."
+                },
+                {
+                    "front": "What is the purpose of the `poster` attribute on a `<video>` tag?",
+                    "back": "It specifies an image to be shown while the video is downloading, or until the user hits the play button."
+                },
+                {
+                    "front": "What is the `<track>` element used for?",
+                    "back": "It is used as a child of <audio> or <video> to specify timed text tracks, such as subtitles, captions, or descriptions."
+                },
+                {
+                    "front": "What is the difference between `width` and `height` attributes on an image and CSS properties?",
+                    "back": "The HTML attributes reserve space for the image during page load, preventing layout shifts. CSS properties apply styles after the document is loaded."
+                },
+                {
+                    "front": "What is the purpose of the `<picture>` element?",
+                    "back": "It allows you to display different images for different devices or screen sizes, providing more flexibility for responsive design than a standard `<img>`."
+                },
+                {
+                    "front": "What is the `rel='noopener'` attribute used for on a link?",
+                    "back": "It is a security measure that prevents the new page from accessing the original page's `window.opener` property, mitigating potential phishing attacks."
+                },
+                {
+                    "front": "What is XHTML?",
+                    "back": "eXtensible HyperText Markup Language. It's a stricter, more XML-based version of HTML. All elements must be properly nested and closed."
+                },
+                {
+                    "front": "What does the `enctype` attribute on a `<form>` specify?",
+                    "back": "The encoding type of the form data when it's submitted. It's essential (`multipart/form-data`) when the form includes file uploads."
+                },
+                {
+                    "front": "What is the `pattern` attribute used for on an `<input>` element?",
+                    "back": "It specifies a regular expression that the input's value is checked against for validation."
+                },
+                {
+                    "front": "What is the `<meter>` tag used for?",
+                    "back": "To display a scalar measurement within a known range, or a fractional value. It's like a gauge (e.g., disk usage)."
+                },
+                {
+                    "front": "What is the `<progress>` tag used for?",
+                    "back": "To represent the completion progress of a task, like a file download or a process running."
+                },
+                {
+                    "front": "What is the difference between `<meter>` and `<progress>`?",
+                    "back": "`<meter>` represents a static value within a range (a gauge), while `<progress>` represents the progress of an ongoing task."
+                },
+                {
+                    "front": "What is the purpose of the `<iframe>` `sandbox` attribute?",
+                    "back": "It enables an extra set of restrictions for the content in the `<iframe>`, increasing security by disabling features like scripts, form submission, etc., unless explicitly allowed."
+                },
+                {
+                    "front": "What is the `<time>` tag used for?",
+                    "back": "To semantically represent a specific period in time or a date. The `datetime` attribute can provide a machine-readable format."
+                },
+                {
+                    "front": "What is the global `contenteditable` attribute?",
+                    "back": "When set to `true`, it specifies that the element's content can be edited by the user directly in the browser."
+                },
+                {
+                    "front": "What is the purpose of the `<template>` element?",
+                    "back": "It holds HTML content that is not rendered by the browser but can be cloned and inserted into the document by JavaScript."
+                },
+                {
+                    "front": "What is the purpose of the `hidden` attribute?",
+                    "back": "A boolean attribute that indicates that the element is not yet, or is no longer, relevant. The browser will not render elements with this attribute."
+                },
+                {
+                    "front": "What is a fragment identifier in a URL?",
+                    "back": "The part of a URL that begins with a hash (#) and points to a specific element on the page that has a matching `id` attribute."
+                },
+                {
+                    "front": "How do you create a favicon for your website?",
+                    "back": "By adding a `<link>` tag in the `<head>` with `rel='icon'` and an `href` attribute pointing to the image file."
+                },
+                {
+                    "front": "What is the `role` attribute?",
+                    "back": "Part of ARIA (Accessible Rich Internet Applications), the `role` attribute defines what an element's purpose is, helping assistive technologies understand the page structure."
+                },
+                {
+                    "front": "What is the purpose of the `<bdo>` tag?",
+                    "back": "The Bi-Directional Override tag is used to override the current text direction. For example, `<bdo dir='rtl'>` will render text from right-to-left."
+                },
+                {
+                    "front": "How can you make a `<div>` clickable like a link without using JavaScript?",
+                    "back": "You can't make a `<div>` itself a link, but you can wrap its content in an `<a>` tag and use CSS to make the `<a>` a block-level element that fills the `<div>`."
+                },
+                {
+                    "front": "What is HTML validation?",
+                    "back": "The process of checking a web page's HTML code to ensure it follows the standards and syntax rules of the HTML version being used."
+                },
+                {
+                    "front": "Why is HTML validation important?",
+                    "back": "It helps find errors, improves browser compatibility, ensures better performance, and is good for maintainability and accessibility."
+                },
+                {
+                    "front": "What is the purpose of the `<ins>` and `<del>` tags?",
+                    "back": "`<del>` represents deleted text (often rendered with a strikethrough), and `<ins>` represents inserted text (often rendered with an underline)."
+                },
+                {
+                    "front": "Can you nest a `<table>` inside another `<table>`?",
+                    "back": "Yes, it is syntactically valid to nest tables, although it can lead to complex and less accessible layouts. It's generally discouraged."
+                },
+                {
+                    "front": "Can you place a block-level element inside an inline element?",
+                    "back": "No, this is generally invalid HTML. For example, you should not put a `<div>` inside a `<span>`. The one exception is the `<a>` tag, which can wrap block-level elements in HTML5."
+                },
+                {
+                    "front": "What does the `reversed` attribute do on an `<ol>` tag?",
+                    "back": "It specifies that the list's items should be numbered in descending order (e.g., 3, 2, 1)."
+                },
+                {
+                    "front": "How do you group options in a `<select>` dropdown?",
+                    "back": "Using the `<optgroup>` tag with a `label` attribute to create a heading for a group of `<option>` elements."
+                },
+                {
+                    "front": "What is `input type='range'` used for?",
+                    "back": "To create a slider control for inputting a number where the exact value is not critical."
+                },
+                {
+                    "front": "What is `input type='color'` used for?",
+                    "back": "To create an input field that opens a color picker, allowing the user to select a color."
+                },
+        
+                {
+                    "front": "What is the difference between `defer` and `async` attributes on a `<script>` tag?",
+                    "back": "`async` downloads the script in parallel and executes it as soon as it's available. `defer` downloads in parallel but executes the script only after the document has finished parsing."
+                },
+                {
+                    "front": "Can an `<audio>` or `<video>` element have multiple `<source>` tags?",
+                    "back": "Yes. This allows you to provide the same media content in different file formats (e.g., MP4, WebM, Ogg). The browser will use the first one it supports."
+                },
+                {
+                    "front": "What does the `autoplay` attribute do on media elements?",
+                    "back": "It specifies that the audio or video will start playing as soon as it is ready. Most modern browsers block or restrict this feature."
+                },
+                {
+                    "front": "To make `autoplay` work on modern browsers, what other attribute is often required for video?",
+                    "back": "The `muted` attribute. Autoplaying video is usually only allowed if it is silent."
+                },
+                {
+                    "front": "What is the `cite` attribute on a `<blockquote>` or `<q>` tag used for?",
+                    "back": "It provides a URL that designates a source document or message for the information quoted."
+                },
+
+                {
+                    "front": "What is the global `title` attribute used for?",
+                    "back": "It specifies extra information about an element. The information is most often shown as a tooltip text when the mouse moves over the element."
+                },
+                {
+                    "front": "What is the purpose of the `rel='nofollow'` attribute on a link?",
+                    "back": "It instructs search engines not to follow the link, meaning it should not pass any ranking authority (link juice) to the destination URL."
+                },
+                {
+                    "front": "What does the `min` and `max` attribute do on a number input?",
+                    "back": "They specify the minimum and maximum allowed values for an `<input type='number'>` or `<input type='range'>` element."
+                },
+                {
+                    "front": "What is the purpose of the `step` attribute on a number or range input?",
+                    "back": "It specifies the legal number intervals for an input field. For example, `step='2'` would allow values like 2, 4, 6, etc."
+                },
+                {
+                    "front": "Can you use an `<h1>` tag more than once on a single page?",
+                    "back": "In HTML5, it is syntactically allowed if each `<h1>` is the main heading for its own sectioning element (like `<article>` or `<section>`). However, for main page SEO and accessibility, it is still best practice to have only one `<h1>` for the entire page."
+                },
+                {
+                    "front": "What is the `accept` attribute used for on an `<input type='file'>`?",
+                    "back": "It specifies a filter for what file types the user can pick from their file system (e.g., `accept='image/png, image/jpeg'`)."
+                },
+                {
+                    "front": "What is the purpose of the `autocomplete` attribute on a form or input field?",
+                    "back": "It provides a hint to the browser on how to automatically complete values based on user history. It can be turned `on` or `off`."
+                },
+                {
+                    "front": "What is the `novalidate` attribute used for on a `<form>` element?",
+                    "back": "It is a boolean attribute that specifies that the form should not be validated when submitted, overriding default browser validation."
+                },
+                {
+                    "front": "What is the `dir` attribute?",
+                    "back": "It specifies the text direction of the element's content. The values are `ltr` (left-to-right) and `rtl` (right-to-left)."
+                },
+                {
+                    "front": "What is the `tabindex` attribute used for?",
+                    "back": "It specifies the tab order of an element. A positive value sets a specific order, `0` includes it in the natural tab flow, and `-1` makes it focusable by script but not by tabbing."
+                },
+                {
+                    "front": "What is the `spellcheck` attribute?",
+                    "back": "A global attribute that indicates whether the element should have its spelling and grammar checked. It can be set to `true` or `false`."
+                },
+               
+                {
+                    "front": "What is the purpose of `<input type='hidden'>`?",
+                    "back": "It defines an input field that is not visible to the user but whose value is still submitted with the form. It's used to send data that the user doesn't need to see or modify."
+                },
+                {
+                    "front": "What is the purpose of `formaction` attribute on a submit button?",
+                    "back": "It overrides the `action` attribute of the parent `<form>` element, allowing a single form to have multiple submit buttons that send data to different URLs."
+                },
+                {
+                    "front": "What does the `multiple` attribute do on an `<input type='file'>`?",
+                    "back": "It allows the user to select more than one file for upload."
+                },
+                {
+                    "front": "What does the `multiple` attribute do on a `<select>` element?",
+                    "back": "It allows the user to select more than one option from the dropdown list."
+                },
+                {
+                    "front": "What is the `<output>` tag used for in a form?",
+                    "back": "It is used to represent the result of a calculation or user action, often populated by a script."
+                },
+                {
+                    "front": "What is the `for` attribute used for on an `<output>` tag?",
+                    "back": "It specifies the relationship between the result of the calculation and the elements that were used in the calculation (by referencing their IDs)."
+                },
+                {
+                    "front": "What is the `<details>` element used for?",
+                    "back": "It creates a disclosure widget in which information is visible only when the widget is toggled into an 'open' state."
+                },
+                {
+                    "front": "What is the `<summary>` element used for?",
+                    "back": "It provides a visible heading or summary for the content of a `<details>` element. Clicking the summary toggles the visibility of the details."
+                },
+                {
+                    "front": "What is the `loop` attribute on a media element?",
+                    "back": "A boolean attribute that, if present, specifies that the audio or video will automatically start over again when it is finished."
+                },
+                {
+                    "front": "What is the purpose of `rel='preconnect'` on a `<link>` tag?",
+                    "back": "It hints to the browser that the user is likely to need resources from the target resource's origin, and therefore the browser can improve performance by setting up the connection in advance."
+                },
+                {
+                    "front": "What is `rel='preload'` used for?",
+                    "back": "It hints to the browser to fetch a resource for the current navigation, such as a script or stylesheet, even if it's not immediately discovered in the HTML. It's a high-priority fetch."
+                },
+                {
+                    "front": "What is a data URL?",
+                    "back": "A scheme that allows you to embed small files, like images, directly into the HTML document's source code instead of linking to an external file."
+                },
+                {
+                    "front": "What is the purpose of the `<strong>` element?",
+                    "back": "To indicate that its contents have strong importance, seriousness, or urgency. Browsers typically render this as bold text."
+                },
+                {
+                    "front": "What is the purpose of the `<em>` element?",
+                    "back": "To represent stress emphasis of its contents. Browsers typically render this as italic text."
+                },
+                {
+                    "front": "What is the `<var>` element used for?",
+                    "back": "To semantically mark a variable in a mathematical expression or a programming context. It's typically rendered in an italic font."
+                },
+                {
+                    "front": "What is the `<kbd>` element used for?",
+                    "back": "To represent user keyboard input, voice input, or any other text entry device input. It's often displayed in a monospace font."
+                },
+                {
+                    "front": "What is the `<samp>` element used for?",
+                    "back": "To represent sample or quoted output from a computer program. It's often displayed in a monospace font."
+                },
+                {
+                    "front": "What is the purpose of the `<slot>` element?",
+                    "back": "Used within a Web Component's Shadow DOM, it acts as a placeholder that you can populate with your own markup from the main document."
+                },
+                {
+                    "front": "What is the `ismap` attribute on an `<img>` tag?",
+                    "back": "A boolean attribute that specifies that the image is part of a server-side image map. When the user clicks the image, the click coordinates are sent to the server."
+                },
+                {
+                    "front": "What is the difference between a client-side and server-side image map?",
+                    "back": "A client-side map (`usemap`) is processed by the browser. A server-side map (`ismap`) sends click coordinates to a server script for processing."
+                },
+                {
+                    "front": "What is the `value` attribute used for on an `<li>` element?",
+                    "back": "Within an ordered list (`<ol>`), it allows you to set a specific number for that list item, and subsequent items will continue from that new value."
+                },
+                {
+                    "front": "What is the `longdesc` attribute on an `<img>`?",
+                    "back": "An attribute that points to a URL containing a long description of the image. It is meant for complex images but has poor browser support and ARIA alternatives are preferred."
+                },
+                {
+                    "front": "What is Microdata in HTML?",
+                    "back": "A specification that uses attributes to add machine-readable metadata to existing HTML content, helping search engines and other tools better understand your content."
+                },
+                {
+                    "front": "What are the core attributes of HTML Microdata?",
+                    "back": "`itemscope` (to create an item), `itemtype` (to specify the vocabulary), and `itemprop` (to add a property to an item)."
+                },
+                {
+                    "front": "How do you specify the base URL for all relative URLs in a document?",
+                    "back": "Using the `<base>` tag in the `<head>` section with an `href` attribute."
+                },
+                {
+                    "front": "What is the `<cite>` tag used for?",
+                    "back": "To define the title of a creative work (e.g., a book, a poem, a song, a movie). It is typically rendered in italics."
+                },
+                {
+                    "front": "What is the `<rp>` tag used for?",
+                    "back": "It is used to provide fallback parenthesis for browsers that do not support the display of ruby annotations, used for East Asian typography."
+                },
+                {
+                    "front": "What is the `<rt>` tag used for?",
+                    "back": "It specifies the ruby text (pronunciation guide) for a ruby annotation, which is defined by the `<ruby>` element."
+                },
+                {
+                    "front": "What is the purpose of the `manifest` attribute on the `<html>` tag (now obsolete)?",
+                    "back": "It pointed to a cache manifest file, used for creating offline web applications. This functionality has been replaced by Service Workers."
                 }
             ]
         },
         {
-            "name": "Java",
+            "name": "CSS",
             "flashcards": [
                 {
-                    "front": "What is method overloading?",
-                    "back": "Defining multiple methods with the same name but different parameter lists."
+                    "front": "What is the CSS Box Model?",
+                    "back": "The CSS box model is a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content."
                 },
                 {
-                    "front": "What is the difference between == and .equals() in Java?",
-                    "back": "== checks for reference equality, while .equals() checks for value equality."
+                    "front": "What is the difference between `position: relative` and `position: absolute`?",
+                    "back": "`position: relative` positions an element relative to its normal position. `position: absolute` positions an element relative to its nearest positioned ancestor (instead of positioned relative to the viewport)."
+                },
+                {
+                    "front": "What does a CSS selector do?",
+                    "back": "A CSS selector selects the HTML element(s) you want to style. Examples include selecting by tag name (`p`), class (`.my-class`), or ID (`#my-id`)."
+                }
+            ]
+        },
+        {
+            "name": "SQL",
+            "flashcards": [
+                 {
+                    "front": "What does CSS stand for?",
+                    "back": "Cascading Style Sheets."
+                },
+                {
+                    "front": "What is the primary purpose of CSS?",
+                    "back": "To describe the presentation and styling of a document written in a markup language like HTML."
+                },
+                {
+                    "front": "What are the three ways to insert CSS into a web page?",
+                    "back": "1. External CSS (linked file), 2. Internal CSS (in a <style> tag in the <head>), and 3. Inline CSS (using the `style` attribute on an HTML element)."
+                },
+                {
+                    "front": "Which method of inserting CSS is generally recommended and why?",
+                    "back": "External CSS is recommended because it separates content (HTML) from presentation (CSS), making the code cleaner, reusable, and easier to maintain."
+                },
+                {
+                    "front": "What is a CSS selector?",
+                    "back": "A pattern used to select the HTML element(s) you want to style."
+                },
+                {
+                    "front": "What is a CSS declaration?",
+                    "back": "A combination of a CSS property and a value (e.g., `color: blue;`)."
+                },
+                {
+                    "front": "What is a CSS declaration block?",
+                    "back": "A set of one or more declarations enclosed in curly braces `{}`. For example: `{ color: blue; font-size: 16px; }`."
+                },
+                {
+                    "front": "What is a CSS rule?",
+                    "back": "A combination of a selector and a declaration block."
+                },
+                {
+                    "front": "Explain the 'Cascade' in CSS.",
+                    "back": "The cascade is the algorithm that determines how to find the value for a given property on an element. It considers source order, specificity, and importance (`!important`)."
+                },
+                {
+                    "front": "What is CSS specificity?",
+                    "back": "The set of rules the browser uses to determine which CSS style declaration is applied to an element when multiple rules are conflicting. More specific selectors override less specific ones."
+                },
+                {
+                    "front": "List the selector types in order of increasing specificity.",
+                    "back": "1. Universal selectors (`*`) and inherited styles. 2. Type selectors (e.g., `h1`). 3. Class selectors (`.example`), attribute selectors (`[type='text']`), and pseudo-classes (`:hover`). 4. ID selectors (`#example`). 5. Inline styles."
+                },
+                {
+                    "front": "What does the `!important` rule do?",
+                    "back": "It gives a specific declaration the highest precedence, overriding any other declaration for that property on that element, regardless of specificity or source order. Its use is generally discouraged."
+                },
+                {
+                    "front": "What is CSS inheritance?",
+                    "back": "The process by which some CSS properties applied to a parent element are passed down to its child elements. For example, `font-family` and `color` are inherited."
+                },
+                {
+                    "front": "How can you force inheritance of a property that isn't normally inherited?",
+                    "back": "By using the `inherit` keyword as the property's value."
+                },
+                {
+                    "front": "Explain the CSS Box Model.",
+                    "back": "It's a box that wraps around every HTML element. It consists of four parts, from innermost to outermost: the content, padding, border, and margin."
+                },
+                {
+                    "front": "What is the difference between `margin` and `padding`?",
+                    "back": "`Padding` is the space between the element's content and its border. `Margin` is the space outside the element's border, between it and other elements."
+                },
+                {
+                    "front": "What does the `box-sizing: border-box;` property do?",
+                    "back": "It changes the box model so that the `width` and `height` properties include the content, padding, and border, but not the margin. This makes layout calculations more predictable."
+                },
+                {
+                    "front": "What is the default value of the `box-sizing` property?",
+                    "back": "`content-box`. In this model, the `width` and `height` properties apply only to the content area."
+                },
+                {
+                    "front": "What is margin collapsing?",
+                    "back": "The vertical margins of two adjacent or nested block-level elements can combine to become a single margin. The resulting margin is the size of the larger of the two collapsed margins."
+                },
+                {
+                    "front": "What is the difference between a class selector and an ID selector?",
+                    "back": "An ID selector (`#my-id`) is used to select one unique element. A class selector (`.my-class`) can be used to select and style multiple elements."
+                },
+                {
+                    "front": "What is a pseudo-class? Give an example.",
+                    "back": "A keyword added to a selector that specifies a special state of the selected element(s). Example: `:hover`, `:focus`, `:first-child`, `:nth-child()`."
+                },
+                {
+                    "front": "What is a pseudo-element? Give an example.",
+                    "back": "A keyword added to a selector that lets you style a specific part of the selected element(s). Example: `::before`, `::after`, `::first-line`, `::selection`."
+                },
+                {
+                    "front": "What is the difference between `:before` and `::before`?",
+                    "back": "`::before` is the modern syntax for pseudo-elements introduced in CSS3. `:before` is the older CSS2 syntax. Browsers support both for backward compatibility, but `::` is recommended."
+                },
+                {
+                    "front": "What is the universal selector?",
+                    "back": "The asterisk `*`. It selects all HTML elements on the page."
+                },
+                {
+                    "front": "What is a combinator in CSS?",
+                    "back": "A character that sits between selectors to define a relationship between them."
+                },
+                {
+                    "front": "Name the four CSS combinators.",
+                    "back": "1. Descendant (` `), 2. Child (`>`), 3. Adjacent Sibling (`+`), and 4. General Sibling (`~`)."
+                },
+                {
+                    "front": "Explain the difference between the child combinator (`>`) and the descendant combinator (` `).",
+                    "back": "The child combinator (`div > p`) selects only `<p>` elements that are direct children of a `<div>`. The descendant combinator (`div p`) selects all `<p>` elements that are inside a `<div>`, no matter how deeply nested."
+                },
+                {
+                    "front": "What does the adjacent sibling combinator (`+`) do?",
+                    "back": "It selects an element that is immediately preceded by a specific element. For example, `h1 + p` selects the first `<p>` element right after an `<h1>`."
+                },
+                {
+                    "front": "What are attribute selectors? Give an example.",
+                    "back": "They select elements based on the presence or value of a given attribute. Example: `input[type='text']` selects all input elements with a type attribute of 'text'."
+                },
+                {
+                    "front": "What is the `display` property?",
+                    "back": "It specifies the display behavior of an element (how it's rendered). Common values include `block`, `inline`, `inline-block`, `flex`, `grid`, and `none`."
+                },
+                {
+                    "front": "What is the difference between `display: block` and `display: inline`?",
+                    "back": "`block` elements start on a new line and take up the full width available. `inline` elements do not start on a new line and only take up as much width as necessary."
+                },
+                {
+                    "front": "What is `display: inline-block` used for?",
+                    "back": "It creates an element that behaves like an inline element (flows with text) but can have a `width` and `height` and vertical margins/padding like a block element."
+                },
+                {
+                    "front": "What is the difference between `visibility: hidden` and `display: none`?",
+                    "back": "`visibility: hidden` hides the element, but it still takes up space in the layout. `display: none` completely removes the element from the document flow, and it takes up no space."
+                },
+                {
+                    "front": "What does the `position` property do?",
+                    "back": "It specifies the type of positioning method used for an element. Values are `static`, `relative`, `absolute`, `fixed`, and `sticky`."
+                },
+                {
+                    "front": "What is the default value of the `position` property?",
+                    "back": "`static`. The element is positioned according to the normal flow of the document."
+                },
+                {
+                    "front": "Explain `position: relative`.",
+                    "back": "The element is positioned relative to its normal position. Setting `top`, `right`, `bottom`, and `left` will move it away from its normal position without affecting the layout of surrounding elements."
+                },
+                {
+                    "front": "Explain `position: absolute`.",
+                    "back": "The element is removed from the normal document flow and positioned relative to its nearest *positioned* ancestor. If no positioned ancestor exists, it uses the document body."
+                },
+                {
+                    "front": "What is a 'positioned' ancestor?",
+                    "back": "An ancestor element whose `position` property is set to anything other than `static` (i.e., `relative`, `absolute`, `fixed`, or `sticky`)."
+                },
+                {
+                    "front": "Explain `position: fixed`.",
+                    "back": "The element is removed from the normal document flow and positioned relative to the browser's viewport. It stays in the same place even when the page is scrolled."
+                },
+                {
+                    "front": "Explain `position: sticky`.",
+                    "back": "It's a hybrid of `relative` and `fixed`. The element is treated as `relative` until it crosses a specified threshold (e.g., scrolls to the top of the viewport), at which point it becomes `fixed`."
+                },
+                {
+                    "front": "What is the `z-index` property used for?",
+                    "back": "It specifies the stack order of a positioned element. An element with a higher `z-index` will appear in front of an element with a lower `z-index`."
+                },
+                {
+                    "front": "Does `z-index` work on statically positioned elements?",
+                    "back": "No, `z-index` only works on elements whose `position` property is set to `absolute`, `relative`, `fixed`, or `sticky`."
+                },
+                {
+                    "front": "What is a stacking context?",
+                    "back": "A three-dimensional conceptualization of HTML elements along an imaginary z-axis. Elements in a new stacking context are contained within it and `z-index` values are only meaningful within that context."
+                },
+                {
+                    "front": "What is Flexbox?",
+                    "back": "A one-dimensional layout model (`display: flex`) that provides an efficient way to lay out, align, and distribute space among items in a container, even when their size is unknown."
+                },
+                {
+                    "front": "What is the difference between the main axis and the cross axis in Flexbox?",
+                    "back": "The main axis is the primary axis along which flex items are laid out (defined by `flex-direction`). The cross axis is the axis perpendicular to the main axis."
+                },
+                {
+                    "front": "What does the `justify-content` property do in Flexbox?",
+                    "back": "It aligns flex items along the main axis of the flex container."
+                },
+                {
+                    "front": "What does the `align-items` property do in Flexbox?",
+                    "back": "It aligns flex items along the cross axis of the flex container."
+                },
+                {
+                    "front": "What does `flex-direction` control?",
+                    "back": "It establishes the main-axis, thus defining the direction flex items are placed in the flex container. Values are `row` (default), `row-reverse`, `column`, and `column-reverse`."
+                },
+                {
+                    "front": "What does `flex-wrap: wrap;` do?",
+                    "back": "It allows flex items to wrap onto multiple lines or columns if there isn't enough space for them on one line."
+                },
+                {
+                    "front": "What does the `flex: 1;` shorthand property do to a flex item?",
+                    "back": "It is a shorthand for `flex-grow: 1;`, `flex-shrink: 1;`, and `flex-basis: 0%;`. It allows the item to grow and shrink to fill available space equally."
+                },
+                {
+                    "front": "What is CSS Grid Layout?",
+                    "back": "A two-dimensional layout system (`display: grid`) for the web. It lets you lay out content in rows and columns."
+                },
+                {
+                    "front": "What is the `fr` unit in CSS Grid?",
+                    "back": "A fractional unit that represents a fraction of the available space in the grid container. `1fr 2fr` would give the second column twice as much space as the first."
+                },
+
+                {
+                    "front": "What is the difference between Flexbox and CSS Grid?",
+                    "back": "Flexbox is designed for one-dimensional layouts (a row or a column). CSS Grid is designed for two-dimensional layouts (rows and columns simultaneously)."
+                },
+                {
+                    "front": "What does the `grid-template-columns` property do?",
+                    "back": "It defines the number and sizes of the columns in a grid layout."
+                },
+                {
+                    "front": "What is the `grid-gap` (or `gap`) property?",
+                    "back": "A shorthand property for `grid-row-gap` and `grid-column-gap`, specifying the size of the gutters between grid rows and columns."
+                },
+                {
+                    "front": "How do you make a grid item span multiple columns?",
+                    "back": "Using the `grid-column` property. For example, `grid-column: 1 / 3;` makes an item start at grid line 1 and end before grid line 3, spanning two columns."
+                },
+                {
+                    "front": "What is a media query?",
+                    "back": "A feature of CSS that allows you to apply styles only when certain conditions are met, such as the browser's viewport width, height, or orientation. It's the core of responsive design."
+                },
+                {
+                    "front": "Write the basic syntax for a media query that applies styles for screens wider than 600px.",
+                    "back": "`@media (min-width: 600px) { /* CSS rules go here */ }`"
+                },
+                {
+                    "front": "What is the 'mobile-first' approach to responsive design?",
+                    "back": "Designing and building for mobile devices first, then progressively enhancing the layout and features for larger screens using media queries (with `min-width`)."
+                },
+                {
+                    "front": "What are viewport units in CSS? Name two.",
+                    "back": "Units that are relative to the size of the viewport (the browser window). Examples include `vw` (1% of viewport width) and `vh` (1% of viewport height)."
+                },
+                {
+                    "front": "What is the difference between `em` and `rem` units?",
+                    "back": "`em` is relative to the font-size of its direct parent element. `rem` (root em) is relative to the font-size of the root `<html>` element. `rem` is often preferred for consistency."
+                },
+                {
+                    "front": "What is the difference between `px` and relative units like `em` or `%`?",
+                    "back": "`px` (pixels) is an absolute unit; its size is fixed. Relative units (`em`, `rem`, `%`) are scalable and their size is determined by another value, like a parent's font size or width."
+                },
+                {
+                    "front": "How can you specify colors in CSS? Name three ways.",
+                    "back": "Using color names (e.g., `red`), HEX values (e.g., `#FF0000`), RGB/RGBA values (e.g., `rgb(255, 0, 0)`), and HSL/HSLA values (e.g., `hsl(0, 100%, 50%)`)."
+                },
+                {
+                    "front": "What is the purpose of the 'A' in RGBA and HSLA?",
+                    "back": "The 'A' stands for Alpha, and it represents the opacity of the color. It's a value between 0.0 (fully transparent) and 1.0 (fully opaque)."
+                },
+                {
+                    "front": "What are CSS Custom Properties (or CSS Variables)?",
+                    "back": "Entities defined by CSS authors that contain specific values to be reused throughout a document. They are set using custom property notation (e.g., `--main-color: black;`) and accessed using the `var()` function."
+                },
+                {
+                    "front": "How do you define a global CSS variable?",
+                    "back": "By declaring it on the `:root` pseudo-class, which makes it available to all elements in the document. Example: `:root { --primary-color: #4CAF50; }`"
+                },
+                {
+                    "front": "How do you use a CSS variable?",
+                    "back": "With the `var()` function. For example: `color: var(--primary-color);`."
+                },
+                {
+                    "front": "What is the purpose of the `@font-face` rule?",
+                    "back": "It allows you to load and use a custom font on a webpage, even if it's not installed on the user's computer."
+                },
+                {
+                    "front": "What is the difference between using `<link>` and `@import` to include a stylesheet?",
+                    "back": "`<link>` is an HTML tag that loads stylesheets in parallel, which is faster. `@import` is a CSS rule that can cause a delay in rendering because it waits for the containing CSS file to be downloaded and parsed first."
+                },
+                {
+                    "front": "What is a CSS preprocessor? Name one.",
+                    "back": "A scripting language that extends the default capabilities of CSS. They are compiled into regular CSS. Examples include Sass, Less, and Stylus."
+                },
+                {
+                    "front": "What does the `float` property do?",
+                    "back": "It places an element on the left or right side of its container, allowing text and inline elements to wrap around it. It's a legacy method for creating layouts."
+                },
+                {
+                    "front": "What is a 'clearfix' hack and why is it used?",
+                    "back": "A technique used to contain floated child elements within a parent container that would otherwise collapse to zero height. This is often done using the `::after` pseudo-element on the container."
+                },
+                {
+                    "front": "What does the `overflow` property control?",
+                    "back": "It specifies what should happen if content overflows an element's box. Values include `visible` (default), `hidden`, `scroll`, and `auto`."
+                },
+                {
+                    "front": "What is the difference between `overflow: scroll` and `overflow: auto`?",
+                    "back": "`scroll` always shows scrollbars, even if the content doesn't overflow. `auto` only shows scrollbars when the content actually overflows."
+                },
+                {
+                    "front": "How do you center a block-level element horizontally?",
+                    "back": "Set its `width` and then set `margin-left` and `margin-right` to `auto`."
+                },
+                {
+                    "front": "How can you center an element both horizontally and vertically using Flexbox?",
+                    "back": "On the parent container, set `display: flex;`, `justify-content: center;` (for horizontal alignment), and `align-items: center;` (for vertical alignment)."
+                },
+                {
+                    "front": "How can you center an element both horizontally and vertically using CSS Grid?",
+                    "back": "On the parent container, set `display: grid;` and `place-items: center;`."
+                },
+                {
+                    "front": "How can you center an element using absolute positioning?",
+                    "back": "Set the parent to `position: relative;`. On the child, set `position: absolute;`, `top: 50%;`, `left: 50%;`, and `transform: translate(-50%, -50%);`."
+                },
+                {
+                    "front": "What does the `font-family` property do?",
+                    "back": "It specifies a prioritized list of one or more font family names and/or generic family names for an element. The browser will use the first one it finds."
+                },
+                {
+                    "front": "Why is it a good practice to include a generic font family (like `sans-serif` or `serif`) at the end of a `font-family` declaration?",
+                    "back": "It acts as a fallback. If none of the specified fonts are available, the browser will use its default font for that generic family, ensuring a readable result."
+                },
+                {
+                    "front": "What is the `font-weight` property used for?",
+                    "back": "It sets the weight (or boldness) of the font. It can take keyword values (`normal`, `bold`) or numeric values (e.g., `400` for normal, `700` for bold)."
+                },
+                {
+                    "front": "What does the `text-transform` property do?",
+                    "back": "It controls the capitalization of text. Values include `none`, `capitalize`, `uppercase`, and `lowercase`."
+                },
+                {
+                    "front": "What does the `text-decoration` property do?",
+                    "back": "It specifies the decoration added to text, most commonly used to add or remove underlines from links (`underline`, `none`)."
+                },
+                {
+                    "front": "What is the `line-height` property used for?",
+                    "back": "It sets the distance between lines of text. A unitless value (e.g., `1.5`) is often recommended as it's relative to the element's font-size."
+                },
+                {
+                    "front": "What does `word-wrap: break-word;` do?",
+                    "back": "It allows long, unbreakable words to be broken and wrap onto the next line to prevent overflow. The more modern property is `overflow-wrap`."
+                },
+                {
+                    "front": "What does the `white-space: nowrap;` property do?",
+                    "back": "It prevents the text inside an element from wrapping to a new line. The text will continue on the same line until a `<br>` tag is encountered."
+                },
+                {
+                    "front": "What are CSS Transitions?",
+                    "back": "They allow property changes in CSS values to occur smoothly over a specified duration, rather than happening instantly."
+                },
+                {
+                    "front": "What are the four main transition-related properties?",
+                    "back": "`transition-property`, `transition-duration`, `transition-timing-function`, and `transition-delay`."
+                },
+                {
+                    "front": "What does `transition-timing-function` control?",
+                    "back": "It describes how the speed of a transition changes over its duration. Common values are `ease`, `linear`, `ease-in`, `ease-out`, and `ease-in-out`."
+                },
+                {
+                    "front": "What are CSS Animations?",
+                    "back": "A way to animate elements without using JavaScript. They are defined with the `@keyframes` rule and then applied to elements using the `animation` property."
+                },
+                {
+                    "front": "What is the purpose of the `@keyframes` rule?",
+                    "back": "It specifies the animation code. You define the styles for different points in the animation's timeline, using percentages from `0%` (or `from`) to `100%` (or `to`)."
+                },
+                {
+                    "front": "What is the difference between a CSS transition and a CSS animation?",
+                    "back": "Transitions are for simple state changes (e.g., on `:hover`). Animations are more powerful, allowing for multi-step sequences defined in `@keyframes` and can loop without user interaction."
+                },
+                {
+                    "front": "What does the `transform` property do?",
+                    "back": "It allows you to modify the coordinate space of the CSS visual formatting model, enabling you to rotate, scale, skew, or translate an element."
+                },
+                {
+                    "front": "Does the `transform` property affect the document flow?",
+                    "back": "No. A transformed element does not affect the position of surrounding elements; it's as if the transform happens after the layout is calculated."
+                },
+                {
+                    "front": "What is the difference between `transform: translate()` and `position: relative`?",
+                    "back": " `translate()` visually moves an element without affecting layout, which can be more performant as it doesn't trigger a re-layout. `position: relative` moves an element but its original space is preserved in the layout."
+                },
+                {
+                    "front": "What is the `background-image` property used for?",
+                    "back": "To set one or more background images for an element."
+                },
+                {
+                    "front": "How do you set a background color and a background image on the same element?",
+                    "back": "You can use the `background-color` and `background-image` properties together. The color will be displayed behind the image (if the image has transparency)."
+                },
+                {
+                    "front": "What does `background-repeat: no-repeat;` do?",
+                    "back": "It prevents the background image from repeating (tiling)."
+                },
+                {
+                    "front": "What does `background-size: cover;` do?",
+                    "back": "It scales the background image to be as large as possible to completely cover the container, potentially cropping the image if aspect ratios differ."
+                },
+                {
+                    "front": "What does `background-size: contain;` do?",
+                    "back": "It scales the background image to be as large as possible while ensuring the entire image is visible within the container."
+                },
+                {
+                    "front": "What is the `object-fit` property used for?",
+                    "back": "It specifies how the content of a replaced element, like an `<img>` or `<video>`, should be resized to fit its container. It's similar to `background-size` but for foreground content."
+                },
+                {
+                    "front": "What is the `calc()` function used for in CSS?",
+                    "back": "It allows you to perform mathematical calculations to determine CSS property values. You can mix different units, like `width: calc(100% - 80px);`."
+                },
+                {
+                    "front": "What is the purpose of the `cursor` property?",
+                    "back": "It specifies the mouse cursor to be displayed when pointing over an element. Common values are `pointer`, `default`, `grab`, and `not-allowed`."
+                },
+                {
+                    "front": "What is the `::selection` pseudo-element used for?",
+                    "back": "It applies styles to the part of a document that has been highlighted by the user (e.g., by clicking and dragging the mouse)."
+                },
+                {
+                    "front": "What is the BEM methodology?",
+                    "back": "Block, Element, Modifier. It's a naming convention for CSS classes to make them more transparent and understandable. Example: `.card__title--highlighted`."
+                },
+                {
+                    "front": "What does the `:root` pseudo-class select?",
+                    "back": "It selects the root element of the document. In HTML, this is always the `<html>` element. It has higher specificity than the `html` selector."
+                },
+                {
+                    "front": "How do you create a triangle using only CSS?",
+                    "back": "By manipulating the borders of an element with zero height and width. For example, a large transparent bottom border and colored left/right borders will form an upward-pointing triangle."
+                },
+                {
+                    "front": "What does the `opacity` property do?",
+                    "back": "It sets the opacity level for an element. The value `0` is fully transparent, `1` is fully opaque. It affects the entire element, including its content."
+                },
+                {
+                    "front": "What is the difference between setting `opacity: 0;` and using a transparent `background-color`?",
+                    "back": "`opacity: 0;` makes the entire element and all its children transparent. A transparent background color only makes the background transparent, leaving the content (like text) visible."
+                },
+                {
+                    "front": "What is the `filter` property used for?",
+                    "back": "It applies graphical effects like blur, brightness, contrast, or grayscale to an element."
+                },
+                {
+                    "front": "What does the `:not()` pseudo-class do?",
+                    "back": "It is a negation pseudo-class that takes a selector as an argument and matches elements that are NOT represented by that selector. Example: `p:not(.intro)`."
+                },
+                {
+                    "front": "What is the `box-shadow` property?",
+                    "back": "It attaches one or more shadows to an element's box. It's defined by X and Y offsets, blur radius, spread radius, and color."
+                },
+                {
+                    "front": "What is the difference between `outline` and `border`?",
+                    "back": "An `outline` is drawn outside the element's border and does not take up space in the layout (it doesn't affect the element's dimensions or the position of other elements)."
+                },
+                {
+                    "front": "What is the `currentColor` keyword?",
+                    "back": "A variable that holds the value of the element's `color` property. It can be used as a value for any other property that accepts a color, like `border-color` or `background-color`."
+                },
+                {
+                    "front": "What is `font-kerning`?",
+                    "back": "A CSS property that controls the use of kerning information stored in a font, which adjusts the spacing between specific pairs of letters for better readability."
+                },
+                {
+                    "front": "What is the `:target` pseudo-class?",
+                    "back": "It selects the element that is the target of the current URL's fragment identifier. For example, if the URL is `page.html#section2`, then `#section2:target` will apply styles."
+                },
+                {
+                    "front": "What does the `pointer-events: none;` property do?",
+                    "back": "It prevents an element from being the target of any mouse events, like clicks or hovers. The events will 'pass through' to whatever is underneath it."
+                },
+                {
+                    "front": "What is the `clip-path` property?",
+                    "back": "It creates a clipping region that determines what part of an element is visible. The part that is inside the region is shown, while the part outside is hidden."
+                },
+                {
+                    "front": "What is the `all` property in CSS?",
+                    "back": "A shorthand property that resets all of an element's properties (except `unicode-bidi` and `direction`) to their initial, inherited, or another specified value."
+                },
+                {
+                    "front": "What is the `ch` unit?",
+                    "back": "A relative unit representing the width of the '0' (zero) character in the element's current font."
+                },
+                {
+                    "front": "What are logical properties in CSS?",
+                    "back": "Properties that are relative to the writing mode (e.g., left-to-right vs. right-to-left). Examples include `margin-inline-start` instead of `margin-left`, and `border-block-end` instead of `border-bottom`."
+                },
+                {
+                    "front": "What is the `prefers-color-scheme` media feature?",
+                    "back": "A media feature used to detect if the user has requested a light or dark color theme based on their operating system settings. It enables automatic dark mode."
+                },
+                {
+                    "front": "What is the `font-display` property used for inside `@font-face`?",
+                    "back": "It controls how a downloadable font renders before it is fully loaded, helping to manage the 'Flash of Unstyled Text' (FOUT) or 'Flash of Invisible Text' (FOIT)."
+                },
+                {
+                    "front": "What is the purpose of the `will-change` property?",
+                    "back": "It provides a hint to the browser about which properties are likely to be changed on an element, allowing the browser to perform optimizations in advance. It should be used sparingly."
+                },
+                {
+                    "front": "What does the `:is()` pseudo-class do?",
+                    "back": "It takes a selector list as an argument and selects any element that can be selected by one of the selectors in that list. It's useful for writing less repetitive selectors."
+                },
+                {
+                    "front": "What is the `aspect-ratio` property?",
+                    "back": "A newer CSS property that allows you to set a preferred aspect ratio for an element's box, which will be maintained as the element is resized."
+                },
+                {
+                    "front": "What is the `scroll-behavior: smooth;` property used for?",
+                    "back": "When applied to the root element, it makes anchor link navigation and `window.scrollTo()` calls animate smoothly instead of jumping instantly."
+                },
+                {
+                    "front": "What is the difference between `justify-items` and `justify-content` in CSS Grid?",
+                    "back": "`justify-content` aligns the entire grid within its container along the row axis. `justify-items` aligns the content *inside* each grid cell along the row axis."
+                },
+                {
+                    "front": "What is the difference between `align-items` and `align-content` in Flexbox/Grid?",
+                    "back": "`align-items` aligns items within each line/row. `align-content` aligns the lines/rows themselves within the container when there is extra space in the cross-axis (i.e., when items wrap)."
+                },
+                {
+                    "front": "What does the `list-style-type` property do?",
+                    "back": "It sets the marker (bullet or number) for items in a list. Examples: `disc`, `circle`, `square`, `decimal`, `none`."
+                },
+                {
+                    "front": "What does the `user-select: none;` property do?",
+                    "back": "It prevents the user from being able to select or highlight the text content of an element."
+                },
+                {
+                    "front": "What is CSS Houdini?",
+                    "back": "A collection of low-level APIs that expose parts of the CSS engine, giving developers the power to extend CSS by creating their own properties and functionalities via JavaScript."
+                },
+                {
+                    "front": "What is the `:empty` pseudo-class?",
+                    "back": "It selects any element that has no children. Children can be either element nodes or text (including whitespace)."
+                },
+                {
+                    "front": "What is the `:focus-within` pseudo-class?",
+                    "back": "It selects an element if that element itself has focus OR if a descendant element inside it has focus. It's very useful for styling form containers."
+                },
+                {
+                    "front": "What is the `:placeholder-shown` pseudo-class?",
+                    "back": "It selects an `<input>` or `<textarea>` element that is currently displaying its placeholder text."
+                },
+                {
+                    "front": "What is the `text-overflow: ellipsis;` property used for?",
+                    "back": "When text overflows its container, this property will display an ellipsis ('...') to represent the clipped text. It requires `overflow: hidden;` and `white-space: nowrap;` to work."
+                },
+                {
+                    "front": "How can you select an element with a specific language?",
+                    "back": "Using the `:lang()` pseudo-class. For example, `p:lang(fr)` would select paragraph elements that are specified as being in French."
+                },
+                {
+                    "front": "What is a 'magic number' in CSS and why should it be avoided?",
+                    "back": "A hardcoded pixel value or other fixed number that 'just works' for a specific situation but is not flexible or scalable. It can easily break if content or layout changes."
+                },
+                {
+                    "front": "What is the `conic-gradient()` function?",
+                    "back": "A CSS function that creates a background image consisting of a gradient with color transitions rotated around a center point."
+                },
+                {
+                    "front": "What does `writing-mode` property do?",
+                    "back": "It sets whether lines of text are laid out horizontally or vertically, as well as the direction in which blocks progress."
+                },
+                {
+                    "front": "What is the `mix-blend-mode` property?",
+                    "back": "It sets how an element's content should blend with the content of the element's direct parent and the element's background."
+                },
+                {
+                    "front": "What is the `shape-outside` property?",
+                    "back": "It defines a shape (like a circle or polygon) around which inline content should wrap. It is often used with floated elements."
+                },
+                {
+                    "front": "What is the purpose of the `grid-auto-flow` property?",
+                    "back": "It controls how auto-placed items are inserted into the grid. It can be set to `row`, `column`, or `dense` to fill in gaps."
+                },
+                {
+                    "front": "What is `minmax()` in CSS Grid?",
+                    "back": "A function used in grid layout that defines a size range, greater than or equal to min and less than or equal to max. Example: `minmax(100px, 1fr)`."
+                },
+                {
+                    "front": "What is the `:optional` pseudo-class?",
+                    "back": "It selects `<input>`, `<select>`, or `<textarea>` elements that do not have the `required` attribute set on them."
+                },
+                {
+                    "front": "What is the `:required` pseudo-class?",
+                    "back": "It selects form elements (`<input>`, `<select>`, or `<textarea>`) that have the `required` attribute set on them."
+                },
+                {
+                    "front": "What is the `caret-color` property?",
+                    "back": "It sets the color of the insertion caret, the blinking cursor that appears in form inputs and other editable text areas."
+                },
+                {
+                    "front": "What is the purpose of `scroll-snap-type`?",
+                    "back": "When applied to a container, it enforces 'snap points' for scrolling, causing the viewport to snap to specific locations after a scroll operation."
+                },
+                {
+                    "front": "What is the difference between `grid-template-areas` and using line numbers for placement?",
+                    "back": "`grid-template-areas` allows you to name grid areas and place items using those names, creating a visual representation of the layout in your CSS. Line numbers are a more direct, numerical way of placing items."
+                },
+                {
+                    "front": "What is the `:in-range` pseudo-class?",
+                    "back": "It selects `<input>` elements whose current value is within the range specified by the `min` and `max` attributes."
+                },
+                {
+                    "front": "What is the `:out-of-range` pseudo-class?",
+                    "back": "It selects `<input>` elements whose current value is outside the range specified by the `min` and `max` attributes."
+                },
+                {
+                    "front": "What is the `:valid` pseudo-class?",
+                    "back": "It selects form elements that have valid values according to their type and constraints (like `required`, `min`, `max`, etc.)."
+                },
+                {
+                    "front": "What is the `:invalid` pseudo-class?",
+                    "back": "It selects form elements that have invalid values according to their type and constraints."
+                },
+                {
+                    "front": "What is the CSS `content` property used for?",
+                    "back": "It is used with the `::before` and `::after` pseudo-elements to generate content in an element. It can insert text, images, or counters."
+                },
+                {
+                    "front": "Can you apply a transition to the `display` property?",
+                    "back": "No. The `display` property is not animatable because it involves discrete steps (on or off) rather than a continuous range of values."
+                },
+                {
+                    "front": "What is the `order` property in Flexbox?",
+                    "back": "It allows you to change the visual order of flex items without changing their order in the HTML source. Items with lower `order` values appear first."
+                },
+                {
+                    "front": "What does `align-self` do in Flexbox or Grid?",
+                    "back": "It allows a single item to override the `align-items` value of its container, letting it align itself differently along the cross axis."
+                },
+                {
+                    "front": "What is the `column-count` property?",
+                    "back": "It specifies the number of columns an element's content should be divided into, creating a multi-column layout like in a newspaper."
+                },
+                {
+                    "front": "What is the `:checked` pseudo-class?",
+                    "back": "It selects radio buttons or checkboxes that are in the checked (toggled on) state."
+                },
+                {
+                    "front": "What is the `:disabled` pseudo-class?",
+                    "back": "It selects form elements that have the `disabled` attribute, allowing you to style them differently (e.g., with a grayed-out appearance)."
+                },
+                {
+                    "front": "What is the `:first-of-type` pseudo-class?",
+                    "back": "It selects the first element of its type among a group of sibling elements. For example, `p:first-of-type` selects the first `<p>` inside any container."
+                },
+                {
+                    "front": "What is the difference between `:first-child` and `:first-of-type`?",
+                    "back": ":first-child` only matches if the element is the very first child of its parent. `:first-of-type` matches if the element is the first of its specific tag type within the parent."
+                },
+                {
+                    "front": "What is `vertical-align` used for?",
+                    "back": "It sets the vertical alignment of an inline, inline-block, or table-cell element relative to its line box. It does not work on block-level elements."
+                },
+                {
+                    "front": "What is the `repeating-linear-gradient()` function?",
+                    "back": "It creates a background image consisting of a repeating linear gradient, allowing you to create patterns like stripes."
+                },
+                {
+                    "front": "What does the `text-indent` property do?",
+                    "back": "It specifies the indentation of the first line of text in a block container."
+                },
+                {
+                    "front": "What is `font-variant: small-caps;`?",
+                    "back": "A style that displays lowercase letters as small capital letters."
+                },
+                {
+                    "front": "What is the `vw` unit based on?",
+                    "back": "Viewport Width. `1vw` is equal to 1% of the width of the viewport."
+                },
+                {
+                    "front": "What is the `vh` unit based on?",
+                    "back": "Viewport Height. `1vh` is equal to 1% of the height of the viewport."
+                },
+                {
+                    "front": "What is the `vmin` unit?",
+                    "back": "Viewport Minimum. It is equal to the smaller of `1vw` or `1vh`."
+                },
+                {
+                    "front": "What is the `vmax` unit?",
+                    "back": "Viewport Maximum. It is equal to the larger of `1vw` or `1vh`."
+                },
+                {
+                    "front": "How do you select an `<a>` tag only when it has an `href` attribute?",
+                    "back": "Using the attribute presence selector: `a[href]`."
+                },
+                {
+                    "front": "How do you select an element whose attribute value *ends with* a certain string?",
+                    "back": "Using the `$` attribute selector. Example: `a[href$='.pdf']` selects links pointing to a PDF file."
+                },
+                {
+                    "front": "How do you select an element whose attribute value *contains* a certain string?",
+                    "back": "Using the `*` attribute selector. Example: `a[class*='btn-']` selects links with a class containing `btn-`."
+                },
+                {
+                    "front": "What is the `word-spacing` property?",
+                    "back": "It increases or decreases the white space between words."
+                },
+                {
+                    "front": "What is the `letter-spacing` property?",
+                    "back": "It increases or decreases the space between characters in a text."
+                },
+                {
+                    "front": "What is a 'Shorthand Property' in CSS?",
+                    "back": "A property that lets you set the values of multiple other CSS properties simultaneously. For example, `font` is a shorthand for `font-style`, `font-variant`, `font-weight`, `font-size`, `line-height`, and `font-family`."
+                },
+                {
+                    "front": "What is the `background-blend-mode` property?",
+                    "back": "It defines how an element's background images should blend with each other and with the element's background color."
+                },
+                {
+                    "front": "What is the `resize` property?",
+                    "back": "It allows a user to resize an element. It is commonly used on `<textarea>` elements, but can be applied to others if their `overflow` is not `visible`."
+                },
+                {
+                    "front": "What is the `:root` selector commonly used for?",
+                    "back": "It is most often used to declare global CSS variables (`--variable-name`) because it selects the highest-level element in the DOM, making the variables accessible everywhere."
+                },
+                {
+                    "front": "What does `flex-basis` control in a flex item?",
+                    "back": "It sets the initial main size of a flex item before any remaining space is distributed. It can be a length (e.g., `20%`, `5rem`) or the keyword `auto`."
+                },
+                {
+                    "front": "What is a 'Replaced Element' in HTML/CSS?",
+                    "back": "An element whose appearance and dimensions are defined by an external resource. Examples include `<img>`, `<iframe>`, `<video>`, and `<input>`."
+                }
+            ]
+        },
+        {
+            "name": "Python",
+            "flashcards": [
+                {
+                    "front": "What is Python?",
+                    "back": "Python is a high-level, interpreted, general-purpose programming language known for its simple, readable syntax."
+                },
+                {
+                    "front": "Is Python a compiled or interpreted language?",
+                    "back": "Python is an interpreted language. The source code is executed line by line by an interpreter, rather than being compiled into machine code beforehand."
+                },
+                {
+                    "front": "What does it mean that Python is 'dynamically typed'?",
+                    "back": "It means you don't have to declare the data type of a variable. The type is determined at runtime."
+                },
+                {
+                    "front": "What is PEP 8?",
+                    "back": "PEP 8 is the official style guide for Python code. It provides conventions for writing readable and consistent Python code."
+                },
+                {
+                    "front": "How do you write a single-line comment in Python?",
+                    "back": "By using the hash symbol (#). Anything after the # on that line is ignored by the interpreter."
+                },
+                {
+                    "front": "How do you write a multi-line comment or docstring in Python?",
+                    "back": "By enclosing the text in triple quotes, either `'''` or `\"\"\"`."
+                },
+                {
+                    "front": "What are the basic built-in data types in Python?",
+                    "back": "Numeric types (int, float, complex), sequence types (list, tuple, range), text type (str), mapping type (dict), set types (set, frozenset), and boolean type (bool)."
+                },
+                {
+                    "front": "What is the difference between a list and a tuple?",
+                    "back": "The main difference is mutability. Lists are mutable (can be changed after creation), whereas tuples are immutable (cannot be changed)."
+                },
+                {
+                    "front": "What is a dictionary in Python?",
+                    "back": "A dictionary is an unordered collection of data values, used to store data in key:value pairs. It is mutable."
+                },
+                {
+                    "front": "What is a set in Python?",
+                    "back": "A set is an unordered, mutable collection of unique elements. It's useful for membership testing and eliminating duplicate entries."
+                },
+                {
+                    "front": "How do you get user input from the console?",
+                    "back": "Using the `input()` function. It reads a line from the console, converts it to a string, and returns it."
+                },
+                {
+                    "front": "What is an f-string?",
+                    "back": "An f-string (formatted string literal) is a way to embed expressions inside string literals, using curly braces `{}`. It is prefixed with an 'f'."
+                },
+                {
+                    "front": "What is the purpose of the `if __name__ == '__main__':` block?",
+                    "back": "It's a construct that allows the code inside it to be executed only when the script is run directly, not when it's imported as a module."
+                },
+                {
+                    "front": "What is the difference between `==` and `is`?",
+                    "back": "`==` checks for equality of value (do two objects have the same content?). `is` checks for identity (do two variables point to the same object in memory?)."
+                },
+                {
+                    "front": "What is type casting in Python?",
+                    "back": "The process of converting a variable from one data type to another, using functions like `int()`, `float()`, `str()`, or `list()`."
+                },
+                {
+                    "front": "What is a list comprehension?",
+                    "back": "A concise and readable way to create a list. It consists of brackets containing an expression followed by a `for` clause. Example: `[x*x for x in range(10)]`."
+                },
+                {
+                    "front": "What are `*args` and `**kwargs` used for in function definitions?",
+                    "back": "`*args` collects extra positional arguments into a tuple. `**kwargs` collects extra keyword arguments into a dictionary."
+                },
+                {
+                    "front": "What is a lambda function?",
+                    "back": "A small, anonymous function defined with the `lambda` keyword. It can take any number of arguments but can only have one expression."
+                },
+                {
+                    "front": "What is the `pass` statement used for?",
+                    "back": "`pass` is a null statement. It's used as a placeholder in blocks where syntax requires a statement, but no code needs to be executed."
+                },
+                {
+                    "front": "How do you handle exceptions in Python?",
+                    "back": "Using a `try...except` block. The code that might raise an exception is placed in the `try` block, and the code to handle it is in the `except` block."
+                },
+                {
+                    "front": "What is the purpose of the `finally` block in a `try...except` statement?",
+                    "back": "The `finally` block contains code that will always be executed, regardless of whether an exception was raised in the `try` block or not. It's often used for cleanup actions."
+                },
+                {
+                    "front": "What is slicing in Python?",
+                    "back": "A feature that lets you access a sub-sequence of a sequence type (like a list, tuple, or string) using the syntax `[start:stop:step]`."
+                },
+                {
+                    "front": "What does a negative index mean in Python sequences?",
+                    "back": "Negative indices count from the end of the sequence. `-1` refers to the last item, `-2` to the second to last, and so on."
+                },
+                {
+                    "front": "What is the `range()` function?",
+                    "back": "It generates a sequence of numbers. It's commonly used for looping a specific number of times in `for` loops."
+                },
+                {
+                    "front": "What is a module in Python?",
+                    "back": "A file containing Python definitions and statements. The file name is the module name with the suffix `.py` added."
+                },
+                {
+                    "front": "How do you import a module in Python?",
+                    "back": "Using the `import` statement, for example, `import math`. You can also use `from math import sqrt` to import specific functions."
+                },
+                {
+                    "front": "What is the difference between `append()` and `extend()` for lists?",
+                    "back": "`append()` adds its single argument as a single element to the end of a list. `extend()` iterates over its argument and adds each element to the list."
+                },
+                {
+                    "front": "How do you remove an item from a list?",
+                    "back": "You can use `list.remove(value)` to remove the first occurrence of a value, or `list.pop(index)` to remove an item at a specific index and return it."
+                },
+                {
+                    "front": "What does the `.get()` method do on a dictionary?",
+                    "back": "It retrieves a value for a given key. Unlike bracket notation (`[]`), it returns a default value (`None` or a specified value) instead of raising a `KeyError` if the key is not found."
+                },
+                {
+                    "front": "How do you iterate over the keys and values of a dictionary simultaneously?",
+                    "back": "Using the `.items()` method in a `for` loop, like this: `for key, value in my_dict.items():`."
+                },
+                {
+                    "front": "What is a virtual environment in Python?",
+                    "back": "An isolated Python environment that allows you to manage packages for a specific project separately, avoiding conflicts between projects that require different versions of the same library."
+                },
+                {
+                    "front": "What is `pip`?",
+                    "back": "`pip` is the standard package installer for Python. It allows you to install and manage third-party packages from the Python Package Index (PyPI)."
+                },
+                {
+                    "front": "What is Object-Oriented Programming (OOP)?",
+                    "back": "A programming paradigm based on the concept of 'objects', which can contain data (attributes) and code (methods). Python is an object-oriented language."
+                },
+                {
+                    "front": "What is a class in Python?",
+                    "back": "A blueprint for creating objects. It defines a set of attributes and methods that the created objects will have."
+                },
+                {
+                    "front": "What is an object or instance?",
+                    "back": "An object is a specific instance of a class, with its own unique state (values for its attributes)."
+                },
+                {
+                    "front": "What is the `__init__` method?",
+                    "back": "It's a special 'dunder' method, known as the constructor. It is automatically called when a new instance of a class is created to initialize its attributes."
+                },
+                {
+                    "front": "What is the purpose of `self`?",
+                    "back": "`self` represents the instance of the class. It is used to access the attributes and methods of the class within its instance methods."
+                },
+                {
+                    "front": "What is inheritance?",
+                    "back": "A mechanism in OOP where a new class (subclass or child) derives properties and methods from an existing class (superclass or parent)."
+                },
+                {
+                    "front": "What is polymorphism?",
+                    "back": "The ability of different classes to be treated as instances of the same class through a common interface. In Python, it often refers to method overriding."
+                },
+                {
+                    "front": "What is encapsulation?",
+                    "back": "The bundling of data (attributes) and the methods that operate on that data into a single unit (a class). It often involves restricting direct access to some of an object's components."
+                },
+                {
+                    "front": "How do you indicate a 'private' attribute in Python?",
+                    "back": "By convention, prefixing an attribute name with a single underscore (`_`) signals it's for internal use. A double underscore (`__`) triggers name mangling."
+                },
+                {
+                    "front": "What is name mangling?",
+                    "back": "When an attribute is prefixed with a double underscore (`__`), Python automatically changes its name to `_ClassName__attributeName` to avoid naming conflicts in subclasses."
+                },
+                {
+                    "front": "What is the difference between a class method and a static method?",
+                    "back": "A class method (`@classmethod`) receives the class as its first argument (`cls`). A static method (`@staticmethod`) knows nothing about the class or instance and is like a regular function inside the class."
+                },
+                {
+                    "front": "What is a decorator?",
+                    "back": "A decorator is a function that takes another function as an argument, adds some functionality to it, and returns another function, all without altering the source code of the original function."
+                },
+                {
+                    "front": "What is a generator?",
+                    "back": "A special type of iterator, created using a function with the `yield` keyword. It generates values one at a time and on-demand, which is very memory efficient."
+                },
+                {
+                    "front": "What is the `yield` keyword used for?",
+                    "back": "The `yield` keyword is used in a generator function. It produces a value for the generator, pauses the function's execution, and saves its state for the next call."
+                },
+                {
+                    "front": "What is the difference between an iterator and an iterable?",
+                    "back": "An iterable is an object that can be looped over (like a list). An iterator is an object that produces the next value in a sequence when `next()` is called on it."
+                },
+                {
+                    "front": "How do you open a file for reading in Python?",
+                    "back": "Using the `open()` function with the mode `'r'`. The recommended way is with a `with` statement: `with open('file.txt', 'r') as f:`."
+                },
+                {
+                    "front": "What is the benefit of using the `with` statement for file handling?",
+                    "back": "It automatically manages resources by ensuring that the file is closed correctly, even if an error occurs within the block."
+                },
+                {
+                    "front": "What is the `json` module used for?",
+                    "back": "It is used for working with JSON data. `json.dumps()` serializes a Python object into a JSON formatted string, and `json.loads()` deserializes a JSON string into a Python object."
+                },
+                {
+                    "front": "What are the `map()` and `filter()` functions?",
+                    "back": "`map(function, iterable)` applies a function to every item of an iterable. `filter(function, iterable)` creates an iterator from elements of an iterable for which the function returns true."
+                },
+                {
+                    "front": "What is the `reduce()` function?",
+                    "back": "Found in the `functools` module, `reduce(function, iterable)` applies a rolling computation to sequential pairs of values in an iterable, reducing it to a single value."
+                },
+                {
+                    "front": "What is the Global Interpreter Lock (GIL)?",
+                    "back": "The GIL is a mutex that protects access to Python objects, preventing multiple native threads from executing Python bytecodes at the same time in CPython. This means true parallelism is not possible with threads."
+                },
+                {
+                    "front": "How can you achieve true parallelism in Python?",
+                    "back": "By using the `multiprocessing` module, which creates separate processes, each with its own Python interpreter and memory space, thus bypassing the GIL."
+                },
+                {
+                    "front": "What is the difference between a shallow copy and a deep copy?",
+                    "back": "A shallow copy creates a new object but inserts references to the objects found in the original. A deep copy creates a new object and recursively copies all objects found in the original."
+                },
+                {
+                    "front": "What is a docstring?",
+                    "back": "A string literal that occurs as the first statement in a module, function, class, or method definition. It is used to document what the code does."
+                },
+                {
+                    "front": "What is the `break` statement used for?",
+                    "back": "It terminates the current loop (`for` or `while`) and transfers execution to the statement immediately following the loop."
+                },
+                {
+                    "front": "What is the `continue` statement used for?",
+                    "back": "It skips the rest of the code inside the current loop for the current iteration only and proceeds to the next iteration."
+                },
+                {
+                    "front": "What is the ternary operator in Python?",
+                    "back": "A one-line conditional expression. The syntax is `value_if_true if condition else value_if_false`."
+                },
+                {
+                    "front": "What is tuple unpacking?",
+                    "back": "The process of assigning the items of a tuple (or list) to multiple variables in a single statement. Example: `x, y, z = (1, 2, 3)`."
+                },
+                {
+                    "front": "What does the `del` keyword do?",
+                    "back": "It is used to delete objects. It can delete variables, items from a list, or key-value pairs from a dictionary."
+                },
+                {
+                    "front": "What are magic methods or dunder methods?",
+                    "back": "Special methods with double underscores at the beginning and end of their names (e.g., `__init__`, `__str__`). They allow you to emulate the behavior of built-in types."
+                },
+                {
+                    "front": "What is the difference between `__str__` and `__repr__`?",
+                    "back": "`__str__` is for creating a readable, user-friendly string representation of an object. `__repr__` is for creating an unambiguous, developer-friendly representation, ideally one that can recreate the object."
+                },
+                {
+                    "front": "What does the `@property` decorator do?",
+                    "back": "It allows you to define a method that can be accessed like an attribute. This is used for creating 'getter' methods in a 'Pythonic' way."
+                },
+                {
+                    "front": "What is a closure?",
+                    "back": "A closure is a function object that remembers values in its enclosing lexical scope even when the scope is no longer present in memory."
+                },
+                {
+                    "front": "What is the LEGB rule for scope?",
+                    "back": "The order in which Python looks for a variable: Local, Enclosing (in nested functions), Global, and Built-in."
+                },
+                {
+                    "front": "What do the `global` and `nonlocal` keywords do?",
+                    "back": "`global` declares that a variable inside a function is the global variable. `nonlocal` declares that a variable inside a nested function is not local to it, but to an enclosing function."
+                },
+                {
+                    "front": "What are the key features of a Python dictionary?",
+                    "back": "They are mutable, dynamic, indexed by unique keys, and as of Python 3.7, they are insertion-ordered."
+                },
+                {
+                    "front": "How do you check if a key exists in a dictionary?",
+                    "back": "Using the `in` keyword: `if 'my_key' in my_dict:`."
+                },
+                {
+                    "front": "What is the difference between a set and a frozenset?",
+                    "back": "A `set` is mutable (you can add or remove elements). A `frozenset` is immutable and hashable, meaning it can be used as a dictionary key or an element in another set."
+                },
+                {
+                    "front": "How do you find the union of two sets?",
+                    "back": "Using the `|` operator or the `.union()` method. Example: `set1 | set2`."
+                },
+                {
+                    "front": "How do you find the intersection of two sets?",
+                    "back": "Using the `&` operator or the `.intersection()` method. Example: `set1 & set2`."
+                },
+                {
+                    "front": "What is a dictionary comprehension?",
+                    "back": "A concise way to create dictionaries. Syntax: `{key_expr: value_expr for item in iterable}`."
+                },
+                {
+                    "front": "What is a package in Python?",
+                    "back": "A way of organizing related modules into a directory hierarchy. A directory must contain a file named `__init__.py` (can be empty) to be considered a package."
+                },
+                {
+                    "front": "What does the `os` module do?",
+                    "back": "It provides a portable way of using operating system dependent functionality, like reading or writing to the file system, and interacting with environment variables."
+                },
+                {
+                    "front": "What does the `datetime` module do?",
+                    "back": "It supplies classes for working with dates and times."
+                },
+                {
+                    "front": "How can you raise a custom exception?",
+                    "back": "Using the `raise` keyword followed by an instance of an exception class. Example: `raise ValueError('An invalid value was provided')`."
+                },
+                {
+                    "front": "What is duck typing?",
+                    "back": "A concept in dynamic typing where an object's suitability is determined by the presence of certain methods and properties, rather than its explicit type. 'If it walks like a duck and it quacks like a duck, then it must be a duck.'"
+                },
+                {
+                    "front": "What is the `collections.Counter` class?",
+                    "back": "A dict subclass for counting hashable objects. It's a collection where elements are stored as dictionary keys and their counts are stored as dictionary values."
+                },
+                {
+                    "front": "What is `collections.defaultdict`?",
+                    "back": "A dict subclass that calls a factory function to supply missing values. It avoids `KeyError` exceptions when trying to access a non-existent key."
+                },
+                {
+                    "front": "What is the `any()` function?",
+                    "back": "It returns `True` if at least one element of an iterable is true. It returns `False` if the iterable is empty."
+                },
+                {
+                    "front": "What is the `all()` function?",
+                    "back": "It returns `True` if all elements of an iterable are true. It returns `True` if the iterable is empty."
+                },
+                {
+                    "front": "What is a generator expression?",
+                    "back": "Similar to a list comprehension, but it creates a generator object instead of a list. It uses parentheses instead of square brackets: `(x*x for x in range(10))`."
+                },
+                {
+                    "front": "What is the `zip()` function?",
+                    "back": "It takes two or more iterables and returns an iterator that aggregates elements from each of them into tuples."
+                },
+                {
+                    "front": "What is the `super()` function used for?",
+                    "back": "It is used to call a method from a parent class. It is often used in a subclass's `__init__` to call the parent's constructor."
+                },
+                {
+                    "front": "What is method overriding?",
+                    "back": "When a subclass provides a specific implementation of a method that is already defined by one of its parent classes."
+                },
+                {
+                    "front": "What is an abstract base class (ABC)?",
+                    "back": "A class that cannot be instantiated. It's designed to be subclassed and is used to define a common interface for its subclasses."
+                },
+                {
+                    "front": "How do you create an abstract method in Python?",
+                    "back": "By using the `abc` module and the `@abstractmethod` decorator on a method within a class that inherits from `ABC`."
+                },
+                {
+                    "front": "What is multiple inheritance?",
+                    "back": "When a class can inherit attributes and methods from more than one parent class."
+                },
+                {
+                    "front": "What is the Method Resolution Order (MRO)?",
+                    "back": "The order in which Python searches for a method in a hierarchy of classes in the presence of multiple inheritance. You can view it with the `.mro()` method."
+                },
+                {
+                    "front": "What is a data class (`@dataclass`)?",
+                    "back": "A decorator, introduced in Python 3.7, that automatically generates special methods like `__init__()`, `__repr__()`, and `__eq__()` for classes that are primarily used to store data."
+                },
+                {
+                    "front": "What is the `__slots__` attribute used for?",
+                    "back": "It's a memory optimization tool. By defining `__slots__`, you declare a fixed set of instance attributes, preventing the creation of `__dict__` for each instance and saving memory."
+                },
+                {
+                    "front": "What is the difference between an instance attribute and a class attribute?",
+                    "back": "An instance attribute is specific to an instance of a class. A class attribute is shared by all instances of that class."
+                },
+                {
+                    "front": "What is the `itertools` module?",
+                    "back": "A module that provides a collection of fast, memory-efficient tools for working with iterators, inspired by functional programming languages."
+                },
+                {
+                    "front": "What is a context manager?",
+                    "back": "An object that defines the methods `__enter__` and `__exit__`, used to manage resources within a `with` statement. It guarantees setup and teardown procedures."
+                },
+                {
+                    "front": "How can you create your own context manager?",
+                    "back": "Either by defining a class with `__enter__` and `__exit__` methods, or more easily by using the `@contextmanager` decorator from the `contextlib` module on a generator function."
+                },
+                {
+                    "front": "What is the purpose of the Walrus Operator (`:=`)?",
+                    "back": "Introduced in Python 3.8, the assignment expression operator `:=` allows you to assign a value to a variable as part of a larger expression."
+                },
+                {
+                    "front": "What is a 'Pythonic' way to swap two variables?",
+                    "back": "Using tuple packing and unpacking: `a, b = b, a`."
+                },
+                {
+                    "front": "What is the `enumerate()` function?",
+                    "back": "It adds a counter to an iterable. It returns an enumerate object that yields pairs containing a count (from 0) and the value from the iterable."
+                },
+                {
+                    "front": "What are type hints in Python?",
+                    "back": "A feature that allows you to indicate the expected data types of variables, function parameters, and return values. They are not enforced by the interpreter but are useful for static analysis tools and code readability."
+                },
+                {
+                    "front": "How do you specify a type hint for a variable?",
+                    "back": "Using a colon after the variable name. Example: `name: str = 'Guido'`."
+                },
+                {
+                    "front": "What is the `pathlib` module?",
+                    "back": "A modern, object-oriented alternative to the `os.path` module for handling filesystem paths."
+                },
+                {
+                    "front": "What is `sys.argv`?",
+                    "back": "`sys.argv` is a list in the `sys` module that contains the command-line arguments passed to a Python script. The first element (`argv[0]`) is the script name itself."
+                },
+                {
+                    "front": "What is the purpose of the `for...else` loop?",
+                    "back": "The `else` block is executed only if the `for` loop completes its iterations without encountering a `break` statement."
+                },
+                {
+                    "front": "What is the purpose of the `while...else` loop?",
+                    "back": "The `else` block is executed only when the `while` loop's condition becomes false. It does not execute if the loop is terminated by a `break` statement."
+                },
+                {
+                    "front": "What is the `isinstance()` function?",
+                    "back": "It checks if an object is an instance of a specified class or a subclass thereof. It returns `True` or `False`."
+                },
+                {
+                    "front": "What is a metaclass?",
+                    "back": "A metaclass is the 'class of a class'. It defines how a class behaves. The default metaclass is `type`."
+                },
+                {
+                    "front": "What are `async` and `await` used for?",
+                    "back": "They are keywords used for asynchronous programming in Python. `async` defines an asynchronous function (a coroutine), and `await` pauses the coroutine until an awaitable task completes."
+                },
+                {
+                    "front": "What is the primary library for asynchronous I/O in Python?",
+                    "back": "The `asyncio` library."
+                },
+                {
+                    "front": "What is the difference between concurrency and parallelism?",
+                    "back": "Concurrency is when multiple tasks are managed at the same time, but not necessarily executing simultaneously. Parallelism is when multiple tasks execute at the exact same time."
+                },
+                {
+                    "front": "How do you reverse a list in-place?",
+                    "back": "Using the `list.reverse()` method."
+                },
+                {
+                    "front": "How do you get a reversed copy of a list?",
+                    "back": "Using slicing with a step of -1: `reversed_list = my_list[::-1]`."
+                },
+                {
+                    "front": "What is the `sorted()` function?",
+                    "back": "It returns a new sorted list from the items in an iterable. It does not modify the original iterable."
+                },
+                {
+                    "front": "What is the difference between `list.sort()` and `sorted()`?",
+                    "back": "`list.sort()` sorts the list in-place (modifies the original list) and returns `None`. `sorted()` returns a new sorted list, leaving the original unchanged."
+                },
+                {
+                    "front": "How can you sort a dictionary by its values?",
+                    "back": "By using the `sorted()` function with a `lambda` function as the `key`. Example: `sorted(my_dict.items(), key=lambda item: item[1])`."
+                },
+                {
+                    "front": "What does the `ord()` function do?",
+                    "back": "It returns an integer representing the Unicode code point of a given single character string."
+                },
+                {
+                    "front": "What does the `chr()` function do?",
+                    "back": "It is the inverse of `ord()`. It returns the string representing a character whose Unicode code point is the integer argument."
+                },
+                {
+                    "front": "How do you check if all characters in a string are alphanumeric?",
+                    "back": "Using the `str.isalnum()` method."
+                },
+                {
+                    "front": "What is pickling in Python?",
+                    "back": "The process of converting a Python object hierarchy into a byte stream (serializing). The `pickle` module is used for this."
+                },
+                {
+                    "front": "What is unpickling?",
+                    "back": "The inverse of pickling. It's the process of converting a byte stream back into a Python object hierarchy."
+                },
+                {
+                    "front": "What is the `re` module used for?",
+                    "back": "It provides regular expression matching operations, used for advanced string searching and manipulation."
+                },
+                {
+                    "front": "What is a first-class citizen in programming?",
+                    "back": "An entity that can be treated as a value: it can be stored in a variable, passed as an argument to a function, and returned from a function. In Python, functions are first-class citizens."
+                },
+                {
+                    "front": "How would you flatten a list of lists?",
+                    "back": "Using a list comprehension: `[item for sublist in list_of_lists for item in sublist]`."
+                },
+                {
+                    "front": "What is monkey patching?",
+                    "back": "A dynamic modification of a class or module at runtime. This means changing or extending existing code (like a third-party library) without altering the original source file."
+                },
+                {
+                    "front": "What are the boolean values in Python?",
+                    "back": "`True` and `False`."
+                },
+                {
+                    "front": "What values are considered 'falsy' in Python?",
+                    "back": "`None`, `False`, zero of any numeric type (0, 0.0), any empty sequence (e.g., '', (), []), and any empty mapping (e.g., {})."
+                },
+                {
+                    "front": "What is the `hash()` function used for?",
+                    "back": "It returns the hash value of an object if it has one. Hashable objects can be used as dictionary keys and set members. All of Python's immutable built-in objects are hashable."
+                },
+                {
+                    "front": "Why can't lists be used as dictionary keys?",
+                    "back": "Because dictionary keys must be immutable and hashable. Lists are mutable, so their hash value could change, which would break the dictionary's internal structure."
+                },
+                {
+                    "front": "What is the `id()` function?",
+                    "back": "It returns the unique 'identity' of an object, which is its memory address in the CPython implementation."
+                },
+                {
+                    "front": "What is the difference between `remove()` and `discard()` for sets?",
+                    "back": "Both remove an element. However, `remove()` will raise a `KeyError` if the element is not found, while `discard()` will do nothing."
+                },
+                {
+                    "front": "What are format specifiers in strings?",
+                    "back": "Codes used inside formatted strings (like f-strings or `.format()`) to control the presentation of values, such as padding, alignment, and number formatting (e.g., `{value:.2f}` for two decimal places)."
+                },
+                {
+                    "front": "What is the `__pycache__` directory?",
+                    "back": "A directory where Python stores the compiled bytecode (`.pyc` files) of imported modules to speed up subsequent imports."
+                },
+                {
+                    "front": "How can you create a shallow copy of a list?",
+                    "back": "Using the `.copy()` method (`new_list = old_list.copy()`) or by slicing the entire list (`new_list = old_list[:]`)."
+                },
+                {
+                    "front": "What is `ChainMap` from the `collections` module?",
+                    "back": "A class that groups multiple dictionaries into a single, updateable view. Lookups search the underlying mappings sequentially until a key is found."
+                },
+                {
+                    "front": "What is `functools.partial`?",
+                    "back": "A function that allows you to 'freeze' some portion of a function's arguments and/or keywords, resulting in a new object with a simplified signature."
+                },
+                {
+                    "front": "What is the `timeit` module?",
+                    "back": "A module for measuring the execution time of small code snippets. It provides a simple way to time Python code."
+                },
+                {
+                    "front": "What is the difference between `xrange()` and `range()`?",
+                    "back": "This is a Python 2 concept. `range()` created a list in memory, while `xrange()` created a generator-like object. In Python 3, `range()` behaves like Python 2's `xrange()`, and `xrange()` does not exist."
+                },
+                {
+                    "front": "How do you create a complex number in Python?",
+                    "back": "By using the `complex()` function or by writing it directly, e.g., `3 + 5j`."
+                },
+                {
+                    "front": "What is short-circuiting in logical operators?",
+                    "back": "For `A and B`, if A is false, B is not evaluated. For `A or B`, if A is true, B is not evaluated. This can be used for performance and to avoid errors."
+                },
+                {
+                    "front": "What are positional-only arguments in a function?",
+                    "back": "Introduced in Python 3.8, they are arguments that can only be supplied by position, not by keyword. They are specified before a `/` in the function signature."
+                },
+                {
+                    "front": "What are keyword-only arguments in a function?",
+                    "back": "Arguments that can only be supplied by keyword, not by position. They are specified after a `*` or `*args` in the function signature."
+                },
+                {
+                    "front": "What does the `zip(*zipped_list)` idiom do?",
+                    "back": "It unzips a list of tuples back into separate sequences."
+                },
+                {
+                    "front": "What is the `logging` module?",
+                    "back": "A flexible event logging system for applications and libraries. It is more powerful and configurable than using `print()` statements for debugging."
+                },
+                {
+                    "front": "What are the standard logging levels in the `logging` module?",
+                    "back": "In increasing order of severity: `DEBUG`, `INFO`, `WARNING`, `ERROR`, and `CRITICAL`."
+                },
+                {
+                    "front": "What is the `requests` library?",
+                    "back": "A popular third-party library for making HTTP requests. It is not part of the standard library but is the de facto standard for this task."
+                },
+                {
+                    "front": "What is a 'shebang' line in a Python script?",
+                    "back": "The first line of a script on Unix-like systems, e.g., `#!/usr/bin/env python3`. It tells the system what interpreter to use to run the script."
+                },
+                {
+                    "front": "What is the `*` operator used for with lists or tuples?",
+                    "back": "It acts as a repetition operator. For example, `[1, 2] * 3` results in `[1, 2, 1, 2, 1, 2]`."
+                },
+                {
+                    "front": "What does the `eval()` function do? Why can it be dangerous?",
+                    "back": "`eval()` parses and evaluates a string as a Python expression. It is dangerous because it can execute arbitrary code, making it a security risk if used with untrusted input."
+                },
+                {
+                    "front": "What is `sys.path`?",
+                    "back": "A list of strings that specifies the search path for modules. When you import a module, Python searches through the directories listed in `sys.path`."
+                },
+                {
+                    "front": "How do you convert a string to a list of characters?",
+                    "back": "By using the `list()` constructor: `list('hello')` results in `['h', 'e', 'l', 'l', 'o']`."
+                },
+                {
+                    "front": "How do you join a list of strings into a single string?",
+                    "back": "Using the `str.join()` method. For example, `''.join(['a', 'b', 'c'])` results in `'abc'`."
+                },
+                {
+                    "front": "What is `None` in Python?",
+                    "back": "`None` is a special constant that represents the absence of a value or a null value. It is an object of its own data type, `NoneType`."
+                },
+                {
+                    "front": "How do you check if a variable is `None`?",
+                    "back": "The preferred method is to use the `is` operator: `if my_variable is None:`."
+                },
+                {
+                    "front": "What is the `typing` module used for?",
+                    "back": "It provides runtime support for type hints, introducing types like `List`, `Dict`, `Tuple`, `Optional`, and `Any` to make hints more specific."
+                },
+                {
+                    "front": "What is the `operator` module?",
+                    "back": "It provides a set of functions corresponding to Python's intrinsic operators. For example, `operator.add(x, y)` is equivalent to `x + y`."
+                },
+                {
+                    "front": "What is the `namedtuple` from the `collections` module?",
+                    "back": "A factory function for creating tuple subclasses with named fields. It allows you to access elements by name instead of just by index."
+                },
+                {
+                    "front": "What is `deque` from the `collections` module?",
+                    "back": "A 'double-ended queue' that supports fast appends and pops from both ends. It is more memory and performance efficient for this purpose than a list."
+                },
+                {
+                    "front": "What are bitwise operators in Python?",
+                    "back": "Operators that work on integers as if they were strings of binary digits. They include `&` (AND), `|` (OR), `^` (XOR), `~` (NOT), `<<` (left shift), and `>>` (right shift)."
+                },
+                {
+                    "front": "What is `__future__` module?",
+                    "back": "A pseudo-module that developers can use to enable new language features that will be in a future version of Python, allowing for a gradual migration."
+                },
+                {
+                    "front": "What is `__debug__`?",
+                    "back": "A built-in constant that is `True` under normal circumstances but `False` when Python is run with the `-O` (optimize) flag. It can be used to include or exclude debug code."
+                },
+                {
+                    "front": "What is the difference between `//` and `/` operators?",
+                    "back": "`/` performs floating-point division (e.g., `5 / 2` is `2.5`). `//` performs integer (or floor) division, truncating the decimal part (e.g., `5 // 2` is `2`)."
+                },
+                {
+                    "front": "What is the `**` operator?",
+                    "back": "It is the exponentiation operator. For example, `2 ** 3` is `8`. It is also used to unpack dictionaries into keyword arguments."
+                },
+                {
+                    "front": "What is the `random` module?",
+                    "back": "A module that implements pseudo-random number generators for various distributions. `random.random()` gives a float between 0 and 1, `random.randint(a,b)` gives an integer."
+                },
+                {
+                    "front": "What is the purpose of `self` in an `__init__` method?",
+                    "back": "`self` refers to the newly created instance of the class. The `__init__` method uses it to set up the instance's initial state by assigning values to its attributes."
                 }
             ]
         }
