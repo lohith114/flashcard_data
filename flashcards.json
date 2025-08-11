@@ -1,0 +1,30 @@
+{
+    "languages": [
+        {
+            "name": "JavaScript",
+            "flashcards": [
+                {
+                    "front": "What does flex: 1 do in CSS Flexbox?",
+                    "back": "It makes the item grow to fill available space equally with other flex items."
+                },
+                {
+                    "front": "What is a closure in JavaScript?",
+                    "back": "A closure is a function that retains access to its outer scope even after the outer function has returned."
+                }
+            ]
+        },
+        {
+            "name": "Java",
+            "flashcards": [
+                {
+                    "front": "What is method overloading?",
+                    "back": "Defining multiple methods with the same name but different parameter lists."
+                },
+                {
+                    "front": "What is the difference between == and .equals() in Java?",
+                    "back": "== checks for reference equality, while .equals() checks for value equality."
+                }
+            ]
+        }
+    ]
+}
